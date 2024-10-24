@@ -34,7 +34,7 @@
     border-radius: 10px;
     width: 40%;
     margin-left: 30%;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     
   }
   .eng-heading{
@@ -43,6 +43,7 @@
     font-weight: 700;
     text-align: center;
     padding-top: 1.5rem;
+    padding-inline: 1rem;
   }
   .roman-heading{
     font-family:'Times New Roman', Times, serif;
@@ -218,6 +219,7 @@ justify-content: center;
     font-weight: 700;
     padding-top: 1.75rem;
     text-align: center;
+    padding-inline: 1.5rem;
   }
   .roman-heading{
     font-family:'Times New Roman', Times, serif;
@@ -388,6 +390,7 @@ justify-content: center;
     font-weight: 700;
     padding-top: 1.5rem;
     text-align: center;
+    padding-inline: 1.5rem;
   }
   .roman-heading{
     font-family:'Times New Roman', Times, serif;
