@@ -24,10 +24,10 @@ app.use("/api/data", detailRoute);
 
 app.use(errorMiddleware);
 
-app.use(express.static(path.join(__dirname, "/client/dist")));
+app.use(express.static(path.join(__dirname, "..", "/client/dist")));
 console.log(__dirname);
 app.get("*", (_, res) => {
-  res.sendFile(path.resolve(__dirname, "client", "dist", "index.html"));
+  res.sendFile(path.resolve(__dirname, "client", "..", "dist", "index.html"));
 });
 
 connectDb().then(() => {
