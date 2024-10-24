@@ -69,6 +69,7 @@ const currentPageUrl = window.location.href;
   for(let i=0; i < details.length; i++)
   {
     const companyName = details[i].companyName;
+    console.log(companyName)
 
     if(details[i].companyName == params.name)
       {
