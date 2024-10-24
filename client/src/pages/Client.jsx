@@ -38,10 +38,8 @@ export const Client = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const params = useParams();
-  console.log(params)
 
   const { details } = useAuth();
-  console.log(details)
 
 
 const toDataURL = async (url) => {
@@ -77,4 +75,5 @@ var person;
   }
 
   console.log(person)
+  console.log(person.name);
 }
