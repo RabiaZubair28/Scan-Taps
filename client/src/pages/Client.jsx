@@ -87,7 +87,7 @@ const currentPageUrl = window.location.href;
         <ImCross className="close" onClick={handleClose} />
        
           <div className="qr-div">
-        {/* <QRCodeCanvas id="qr" className="qr"  value={window.location.href} /> */}
+        <QRCodeCanvas id="qr" className="qr"  value={window.location.href} />
         </div>
       
         <div className="qr-btn2" onClick={()=>{
