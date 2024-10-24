@@ -9,7 +9,7 @@ const connectDb = require("./utils/db.js");
 const errorMiddleware = require("./middlewares/error-middleware.js");
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: process.env.FRONTEND_URL,
   method: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 };
@@ -21,9 +21,8 @@ app.use("/api/data", detailRoute);
 
 app.use(errorMiddleware);
 
-const PORT = 3500;
 connectDb().then(() => {
-  app.listen(PORT, () => {
-    console.log(`server is running at port: ${PORT}`);
+  app.listen(process.env.PORT, () => {
+    console.log(`server is running at port: ${process.env.PORT}`);
   });
 });
