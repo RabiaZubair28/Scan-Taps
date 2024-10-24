@@ -63,17 +63,55 @@ const downloadImg = async(link) => {
 
 const currentPageUrl = window.location.href;
 
-var person;
+var companyName,
+name,
+description,
+phone01,
+phone02,
+address,
+clientName,
+designation,
+whatsapp01,
+whatsapp02,
+instagramLink,
+snapchatLink,
+youtubeLink,
+tiktokLink,
+twitterLink,
+facebookLink,
+googleReviewLink,
+website,
+email,
+qr,
+youtubeShortsLink,
+googleMapLink,
+menuLink,
+images,
+logo,
+location,
+romanName,
+password,
+img01,
+img02,
+img03,
+img04,
+img05,
+img06,
+img07,
+img08,
+img09,
+img10;
 
   for(let i=0; i < details.length; i++)
   {
     if(details[i].companyName == params.name)
       {
-          person = details[i];
-     
+        companyName = details[i].companyName;
+        name = details[i].name;
     }
   }
 
-  console.log(person)
+  console.log(companyName)
+  console.log(name)
  
 }
