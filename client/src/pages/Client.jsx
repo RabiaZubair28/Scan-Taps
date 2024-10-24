@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { QRCodeCanvas} from 'qrcode.react';
 import phone from "../assets/phone.png"
-import address from "../assets/adress.png"
+import addressImg from "../assets/adress.png"
 import whatsapp from "../assets/whatsapp.png"
 import insta from "../assets/insta.png"
 import snap from "../assets/snap.png"
@@ -11,8 +11,8 @@ import tiktok from "../assets/tiktok.png"
 import threads from "../assets/threads.png"
 import fb from "../assets/fb.png"
 import greview from "../assets/greview.png"
-import website from "../assets/web.png"
-import email from "../assets/gmail.png"
+import websiteImg from "../assets/web.png"
+import emailImg from "../assets/gmail.png"
 import ytshorts from "../assets/yt-shorts.png"
 import locations from "../assets/location.png"
 import eye from "../assets/eye.jpg"
@@ -224,7 +224,7 @@ img10;
             </div></a>
             <a href={`${googleMapLink}`} className="link">
               <div className="socials">
-              <img src={address} height={50} width={50}></img>
+              <img src={addressImg} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Address / العنوان</p>
                 <p className="details">{address}</p>
@@ -297,14 +297,14 @@ img10;
             </div></a>
             
             <a href={`${website}`} className="link"><div className="socials">
-              <img src={website} height={50} width={50}></img>
+              <img src={websiteImg} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Website /رابط الموقع</p>
                 <p className="details">{website}</p>
               </div>
             </div></a>
             <a href={`mailto:${email}`} className="link"><div className="socials">
-              <img src={email} height={50} width={50}></img>
+              <img src={emailImg} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Email /جي ميل</p>
                 <p className="details">{email}</p>
