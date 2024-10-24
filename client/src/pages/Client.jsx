@@ -16,7 +16,7 @@ import email from "../assets/gmail.png"
 import ytshorts from "../assets/yt-shorts.png"
 import locations from "../assets/location.png"
 import eye from "../assets/eye.jpg"
-// import Modal from 'react-bootstrap/Modal';
+import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 import "./client.css"
 import { Helmet } from 'react-helmet';
@@ -84,13 +84,30 @@ const currentPageUrl = window.location.href;
       style={{ display: 'block', position: 'initial' }}
     >
       
-    hello
+      <Modal.Dialog>
+        <Modal.Header >
+        <ImCross className="close" onClick={handleClose} />
+        </Modal.Header>
+        <Modal.Body>
+          <div className="qr-div">
+        {/* <QRCodeCanvas id="qr" className="qr"  value={window.location.href} /> */}
+        </div>
+        </Modal.Body>
+        <Modal.Footer>
+        <div className="qr-btn2" onClick={()=>{
+                  downloadImg(details[i].qr)
+                  handleClose()
+      }} >
+            <FaDownload size={30} color="white" />
+        </div>
+        </Modal.Footer>
+      </Modal.Dialog>
     </div>}
     { !show && <section className="main">
 
       <Helmet>
       <title>{details[i].name}</title>
-    </Helmet>
+      </Helmet>
         <img src={details[i].images} className="bg-img" alt=""></img>
         <div className="logo-div">
         <img src={details[i].logo} className="logo22" alt=""></img>
