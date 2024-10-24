@@ -84,24 +84,7 @@ const currentPageUrl = window.location.href;
       style={{ display: 'block', position: 'initial' }}
     >
       
-      <Modal.Dialog>
-        <Modal.Header >
-        <ImCross className="close" onClick={handleClose} />
-        </Modal.Header>
-        <Modal.Body>
-          <div className="qr-div">
-        {/* <QRCodeCanvas id="qr" className="qr"  value={window.location.href} /> */}
-        </div>
-        </Modal.Body>
-        <Modal.Footer>
-        <div className="qr-btn2" onClick={()=>{
-                  downloadImg(details[i].qr)
-                  handleClose()
-      }} >
-            <FaDownload size={30} color="white" />
-        </div>
-        </Modal.Footer>
-      </Modal.Dialog>
+   
     </div>}
     { !show && <section className="main">
 
