@@ -293,7 +293,7 @@ const currentPageUrl = window.location.href;
             <IoLogoWhatsapp size={30} color="white" /></WhatsappShareButton>
             </div>
         </div>
-        <p className="label">Copyright © <span className="company">{details[i].companyName}</span>. All Rights Reserve</p>
+        <p className="label">Copyright © <span className="company">{details[i].companyName}</span>. All Rights Reserved.</p>
      
   
   {/* <iframe src={details[i].location} width="600" height="450" allowfullscreen="" loading="lazy"></iframe> */}
