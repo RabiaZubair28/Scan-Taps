@@ -83,9 +83,10 @@ const currentPageUrl = window.location.href;
       { show && <div className="qr-modal"
       style={{ display: 'block', position: 'initial' }}
     >
+       <div className="close-div">
       
         <ImCross className="close" onClick={handleClose} />
-       
+       </div>
           <div className="qr-div">
         <QRCodeCanvas id="qr" className="qr"  value={window.location.href} />
         </div>
