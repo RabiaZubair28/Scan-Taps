@@ -64,21 +64,17 @@ const downloadImg = async(link) => {
 }
 
 const currentPageUrl = window.location.href;
+
 var person;
 
-for(let i=0; i < details.length; i++)
+  for(let i=0; i < details.length; i++)
   {
-    if(params.name == details[i].companyName)
-    {
-      person = details[i];
+    if(details[i].companyName == params.name)
+      {
+          person = details[i];
+     
     }
   }
 
-  console.log(person);
-  console.log(person.name);
- 
-     
-   
-  }
-
-
+  console.log(person)
+}
