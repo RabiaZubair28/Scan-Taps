@@ -44,6 +44,7 @@
     text-align: center;
     padding-top: 1.5rem;
     padding-inline: 1rem;
+    line-height: 2.5rem;
   }
   .roman-heading{
     font-family:'Times New Roman', Times, serif;
@@ -220,6 +221,7 @@ justify-content: center;
     padding-top: 1.75rem;
     text-align: center;
     padding-inline: 1.5rem;
+    line-height: 2.5rem;
   }
   .roman-heading{
     font-family:'Times New Roman', Times, serif;
@@ -391,6 +393,7 @@ justify-content: center;
     padding-top: 1.5rem;
     text-align: center;
     padding-inline: 1.5rem;
+    line-height: 2.5rem
   }
   .roman-heading{
     font-family:'Times New Roman', Times, serif;
