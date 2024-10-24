@@ -100,4 +100,3 @@ for(let i=0; i < details.length; i++)
   }
 
 
-}
