@@ -76,10 +76,10 @@ for(let i=0; i < details.length; i++)
 
   console.log(person);
 
-    if(details[i].companyName == params.name)
+    if(person.name == params.name)
       {
         return(
-  <p>{person.name}</p>
+          <p>{person.name}</p>
         )
       }
       else{
