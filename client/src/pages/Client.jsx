@@ -15,8 +15,8 @@ import website from "../assets/web.png"
 import email from "../assets/gmail.png"
 import ytshorts from "../assets/yt-shorts.png"
 import locations from "../assets/location.png"
-import eye from "../assets/eye.jpg"
-import Modal from 'react-bootstrap/Modal';
+// import eye from "../assets/eye.jpg"
+// import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 import "./client.css"
 import { Helmet } from 'react-helmet';
