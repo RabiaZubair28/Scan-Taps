@@ -1,9 +1,6 @@
 import { useParams } from "react-router-dom";
-import {ShareSocial} from 'react-share-social'
 import { useAuth } from "../store/auth";
 import { QRCodeCanvas} from 'qrcode.react';
-import html2canvas from "html2canvas";
-import { jsPDF } from "jspdf";
 import phone from "../assets/phone.png"
 import address from "../assets/adress.png"
 import whatsapp from "../assets/whatsapp.png"
@@ -19,8 +16,7 @@ import email from "../assets/gmail.png"
 import ytshorts from "../assets/yt-shorts.png"
 import locations from "../assets/location.png"
 import eye from "../assets/eye.jpg"
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+// import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 import "./client.css"
 import { Helmet } from 'react-helmet';
@@ -47,16 +43,6 @@ export const Client = () => {
   const { details } = useAuth();
   console.log(details)
 
-  const downloadQr = (rootEle) => {
-    const input = document.getElementById(rootEle);
-    html2canvas(input)
-        .then((canvas) => {
-            const imgData = canvas.toDataURL('image/png');
-            const pdf = new jsPDF();
-            pdf.addImage(imgData, 'JPEG', 0, 0);
-            pdf.save(`QR.pdf`);
-        })
-}
 
 const toDataURL = async (url) => {
 
@@ -98,24 +84,7 @@ const currentPageUrl = window.location.href;
       style={{ display: 'block', position: 'initial' }}
     >
       
-      <Modal.Dialog>
-        <Modal.Header >
-        <ImCross className="close" onClick={handleClose} />
-        </Modal.Header>
-        <Modal.Body>
-          <div className="qr-div">
-        <QRCodeCanvas id="qr" className="qr"  value={window.location.href} />
-        </div>
-        </Modal.Body>
-        <Modal.Footer>
-        <div className="qr-btn2" onClick={()=>{
-                  downloadImg(details[i].qr)
-                  handleClose()
-      }} >
-            <FaDownload size={30} color="white" />
-        </div>
-        </Modal.Footer>
-      </Modal.Dialog>
+    hello
     </div>}
     { !show && <section className="main">
 
