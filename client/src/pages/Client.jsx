@@ -239,7 +239,7 @@ img10;
             </div></a>
             <a href={`https://wa.me/${whatsapp02}`} className="link"><div className="socials" >
               <img src={whatsapp} height={50} width={50}></img>
-              <div>
+              <div >
                 <p className="tag-heading">Whatsapp / واتساب</p>
                 <p className="details">{whatsapp02}</p>
               </div>

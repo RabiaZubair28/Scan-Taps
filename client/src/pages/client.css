@@ -1200,11 +1200,22 @@ justify-content: center;
 }
 .details{
   font-family:Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 13px;
   padding-inline: 1rem;
   color: black;
   margin-top: 0.5rem;
   width:fit-content
+}
+.description{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgb(79, 78, 78);
+  padding-inline: 8%;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
 }
 
 }
@@ -1222,17 +1233,7 @@ justify-content: center;
 }
 
 
-.description{
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-  color: rgb(79, 78, 78);
-  padding-inline: 8%;
-  text-align: center;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  text-align: center;
-}
+
 .socials{
   display: flex;
   padding-top: 0;
