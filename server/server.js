@@ -10,7 +10,7 @@ const errorMiddleware = require("./middlewares/error-middleware.js");
 const path = require("path");
 
 const corsOptions = {
-  origin: "http://localhost:3500",
+  origin: "http://localhost:3500/api/data/detail",
   method: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 };
