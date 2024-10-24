@@ -66,7 +66,7 @@ const downloadImg = async(link) => {
 const currentPageUrl = window.location.href;
 var person;
 
-  for(let i=0; i < details.length; i++)
+for(let i=0; i < details.length; i++)
   {
     if(params.name == details[i].companyName)
     {
@@ -75,5 +75,29 @@ var person;
   }
 
   console.log(person);
+
+    if(details[i].companyName == params.name)
+      {
+        return(
+  <p>{person.name}</p>
+        )
+      }
+      else{
+        return(
+          <div className=" content">
+          <h2 className="header" style={{ color:"white", textAlign:"center"}}>404</h2>
+          <h4 style={{ color:"white", textAlign:"center"}}>Sorry! Page not found</h4>
+          <p style={{ color:"white", textAlign:"center"}}>
+            Oops! It seems like the page you're trying to access doesn't exist.
+            If you believe there's an issue, feel free to report it, and we'll
+            look into it.
+          </p>
+        </div>
+        )
+      }
+     
+   
+  }
+
 
 }
