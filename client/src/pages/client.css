@@ -1095,7 +1095,7 @@ justify-content: center;
   font-size: 17px;
   color: black;
   font-weight: 500;
-  padding-left: 2rem;
+  padding-inline: 1rem;
   line-height: 1.75rem;
   text-align: center;
 }
