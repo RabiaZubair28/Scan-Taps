@@ -201,150 +201,150 @@ img10;
                 <div className="detail02">{clientName}</div>
                 <div className="detail">{designation}</div>
                 <div className="detail"> <a href={`tel:${phone01}`} className="link">{phone01}</a> /  <a href={`tel:${phone02}`} className="link">{phone02}</a></div>
-                <a href="mailto:scanntap94@gmail.com" className="link"><div className="detail">{email}</div></a>
+                <a href={`mailto:${email}`} className="link"><div className="detail">{email}</div></a>
                 </div>
                 <div className="description">{description}</div>
   
           </div>
           <hr />
-          {/* <div className="social-segment">
-          <a href={`tel:${details[i].phone01}`} className="link"><div className="socials">
+          <div className="social-segment">
+          <a href={`tel:${phone01}`} className="link"><div className="socials">
               <img src={phone} height={50} width={50}></img>
               <div >
                 <p className="tag-heading">Phone / الهاتف</p>
-                <p className="details">{details[i].phone01}</p>
+                <p className="details">{phone01}</p>
               </div>
             </div></a>
-            <a href={`tel:${details[i].phone02}`} className="link"><div className="socials">
+            <a href={`tel:${phone02}`} className="link"><div className="socials">
               <img src={phone} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Phone / الهاتف</p>
-                <p className="details">{details[i].phone02}</p>
+                <p className="details">{phone02}</p>
               </div>
             </div></a>
-            <a href={`${details[i].googleMapLink}`} className="link">
+            <a href={`${googleMapLink}`} className="link">
               <div className="socials">
               <img src={address} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Address / العنوان</p>
-                <p className="details">{details[i].address}</p>
+                <p className="details">{address}</p>
               </div>
             </div></a>
-            <a href={`https://wa.me/${details[i].whatsapp01}`} className="link"><div className="socials">
+            <a href={`https://wa.me/${whatsapp01}`} className="link"><div className="socials">
               <img src={whatsapp} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Whatsapp / واتساب</p>
-                <p className="details">{details[i].whatsapp01}</p>
+                <p className="details">{whatsapp01}</p>
               </div>
             </div></a>
-            <a href={`https://wa.me/${details[i].whatsapp02}`} className="link"><div className="socials" >
+            <a href={`https://wa.me/${whatsapp02}`} className="link"><div className="socials" >
               <img src={whatsapp} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Whatsapp / واتساب</p>
-                <p className="details">{details[i].whatsapp02}</p>
+                <p className="details">{whatsapp02}</p>
               </div>
             </div></a>
-            <a href={`${details[i].instagramLink}`} className="link"><div className="socials">
+            <a href={`${instagramLink}`} className="link"><div className="socials">
               <img src={insta} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Instagram / انستغرام
                 </p>
-                <p className="details">{details[i].instagramLink}</p>
+                <p className="details">{instagramLink}</p>
               </div>
             </div></a>
-            <a href={`${details[i].snapchatLink}`} className="link"><div className="socials">
+            <a href={`${snapchatLink}`} className="link"><div className="socials">
               <img src={snap} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Snapchat / سناب شات</p>
-                <p className="details">{details[i].snapchatLink}</p>
+                <p className="details">{snapchatLink}</p>
               </div>
             </div></a>
-            <a href={`${details[i].youtubeLink}`} className="link"><div className="socials">
+            <a href={`${youtubeLink}`} className="link"><div className="socials">
               <img src={yt} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Youtube / موقع يوتيوب</p>
-                <p className="details">{details[i].youtubeLink}</p>
+                <p className="details">{youtubeLink}</p>
               </div>
             </div></a>
-            <a href={`${details[i].tiktokLink}`} className="link"><div className="socials">
+            <a href={`${tiktokLink}`} className="link"><div className="socials">
               <img src={tiktok} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Tiktok / تيك توك</p>
-                <p className="details">{details[i].tiktokLink}</p>
+                <p className="details">{tiktokLink}</p>
               </div>
             </div></a>
-            <a href={`${details[i].twitterLink}`} className="link"><div className="socials">
+            <a href={`${twitterLink}`} className="link"><div className="socials">
               <img src={threads} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Twitter / تويتر</p>
-                <p className="details">{details[i].twitterLink}</p>
+                <p className="details">{twitterLink}</p>
               </div>
             </div></a>
-            <a href={`${details[i].facebookLink}`} className="link"><div className="socials">
+            <a href={`${facebookLink}`} className="link"><div className="socials">
               <img src={fb} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Facebook / فيسبوك</p>
-                <p className="details">{details[i].facebookLink}</p>
+                <p className="details">{facebookLink}</p>
               </div>
             </div></a>
-            <a href={`${details[i].googleMapLink}`} className="link"><div className="socials">
+            <a href={`${googleMapLink}`} className="link"><div className="socials">
               <img src={greview} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Google Reviews / تقييمات جوجل
                 </p>
-                <p className="details">{details[i].googleReviewLink}</p>
+                <p className="details">{googleReviewLink}</p>
               </div>
             </div></a>
             
-            <a href={`${details[i].website}`} className="link"><div className="socials">
+            <a href={`${website}`} className="link"><div className="socials">
               <img src={website} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Website /رابط الموقع</p>
-                <p className="details">{details[i].website}</p>
+                <p className="details">{website}</p>
               </div>
             </div></a>
-            <a href={`mailto:${details[i].email}`} className="link"><div className="socials">
+            <a href={`mailto:${email}`} className="link"><div className="socials">
               <img src={email} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Email /جي ميل</p>
-                <p className="details">{details[i].email}</p>
+                <p className="details">{email}</p>
               </div>
             </div></a>
-            <a href={`${details[i].youtubeShortsLink}`} className="link"><div className="socials">
+            <a href={`${youtubeShortsLink}`} className="link"><div className="socials">
               <img src={ytshorts} height={50} width={50}></img>
               <div >
                 <p className="tag-heading">YouTube Shorts / شورت يوتيوب</p>
-                <p className="details">{details[i].youtubeShortsLink}</p>
+                <p className="details">{youtubeShortsLink}</p>
               </div>
             </div></a>
-            <a href={`${details[i].googleMapLink}`} className="link"><div className="socials">
+            <a href={`${googleMapLink}`} className="link"><div className="socials">
               <img src={locations} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Location / خرائط جوجل</p>
-                <p className="details">{details[i].googleMapLink}</p>
+                <p className="details">{googleMapLink}</p>
               </div>
             </div></a>
-          </div> */}
-          {/* <hr />
+          </div>
+          <hr />
           <p className="image-gallery-heading">Image Gallery</p>
           <hr />
           <div className="image-gallery">
-            <a href={details[i].img01}><img src={details[i].img01} className="image"></img></a>
-            <a href={details[i].img02}><img src={details[i].img02} className="image"></img></a>
-            <a href={details[i].img03}><img src={details[i].img03} className="image"></img></a>
-            <a href={details[i].img04}><img src={details[i].img04} className="image"></img></a>
-            <a href={details[i].img05}><img src={details[i].img05} className="image"></img></a>
-            <a href={details[i].img06}><img src={details[i].img06} className="image"></img></a>
-            <a href={details[i].img07}><img src={details[i].img07} className="image"></img></a>
-            <a href={details[i].img08}><img src={details[i].img08} className="image"></img></a>
-            <a href={details[i].img09}><img src={details[i].img09} className="image"></img></a>
-            <a href={details[i].img10}><img src={details[i].img10} className="image"></img></a>
+            <a href={img01}><img src={img01} className="image"></img></a>
+            <a href={img02}><img src={img02} className="image"></img></a>
+            <a href={img03}><img src={img03} className="image"></img></a>
+            <a href={img04}><img src={img04} className="image"></img></a>
+            <a href={img05}><img src={img05} className="image"></img></a>
+            <a href={img06}><img src={img06} className="image"></img></a>
+            <a href={img07}><img src={img07} className="image"></img></a>
+            <a href={img08}><img src={img08} className="image"></img></a>
+            <a href={img09}><img src={img09} className="image"></img></a>
+            <a href={img10}><img src={img10} className="image"></img></a>
           </div>
           <hr />
           <p className="image-gallery-heading">Location</p>
           <hr />
           <div className="location">
-          <iframe src={details[i].location} width="100%" height="300" allowfullscreen="" loading="lazy"></iframe> 
+          <iframe src={location} width="100%" height="300" allowfullscreen="" loading="lazy"></iframe> 
           </div>
           <div className="qr-section">
               <div className="qr-btn" onClick={handleShow} >
@@ -352,19 +352,19 @@ img10;
               </div>
        
               <div className="qr-btn" onClick={()=>{
-                downloadImg(details[i].qr)
+                downloadImg(qr)
               }} value="download">
               <FaDownload size={30} color="white" />
               </div>
-          </div> */}
+          </div>
   
-          {/* <hr />
+         <hr />
           <p className="image-gallery-heading">Share On</p>
           <hr />
           {/* <ShareSocial url="localhost.com" socialTypes={["facebook"]} /> */}
-          {/* <div className="social-section">
+          <div className="social-section">
               <div className="social-btn" >
-              <FacebookShareButton url={currentPageUrl} quote="please share this" hashtag={`Welcom to ${companyName}. Get to know us at ${currentPageUrl}`}>
+              <FacebookShareButton url={currentPageUrl} quote="please share this" hashtag={`Welcome to ${companyName}. Get to know us at ${currentPageUrl}`}>
               <TiSocialFacebook size={30} color="white" />
               </FacebookShareButton>
               
@@ -386,7 +386,7 @@ img10;
               <IoLogoWhatsapp size={30} color="white" /></WhatsappShareButton>
               </div>
           </div>
-          <p className="label">Copyright © <span className="company">{details[i].companyName}</span>. All Rights Reserved.</p> */}
+          <p className="label">Copyright © <span className="company">{companyName}</span>. All Rights Reserved.</p>
        
     
     {/* <iframe src={details[i].location} width="600" height="450" allowfullscreen="" loading="lazy"></iframe> */}
