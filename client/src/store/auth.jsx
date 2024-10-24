@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
 
   const getDetails = async () => {
     try{
-        const response = await fetch("http://localhost:3500/api/data/detail",{
+        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/data/detail`,{
           method: "GET",
 
         });
