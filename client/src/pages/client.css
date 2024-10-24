@@ -20,6 +20,12 @@
   align-items: center;
   justify-content: center;
 }
+.qr2-div{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (max-width: 2500px) {
   .main{
     background-color: white;

@@ -89,14 +89,14 @@ const currentPageUrl = window.location.href;
           <div className="qr-div">
         <QRCodeCanvas id="qr" className="qr"  value={window.location.href} />
         </div>
-      
+        <div className="qr2-div">
         <div className="qr-btn2" onClick={()=>{
                   downloadImg(details[i].qr)
                   handleClose()
       }} >
             <FaDownload size={30} color="white" />
         </div>
-   
+   </div>
     </div>}
     { !show && <section className="main">
 
