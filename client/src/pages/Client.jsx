@@ -188,25 +188,25 @@ img10;
           <div className="logo-div">
           <img src={logo} className="logo22" alt=""></img>
           </div>
-          {/* <div>
-                <div className="eng-heading">{details[i].name}</div>
+          <div>
+                <div className="eng-heading">{name}</div>
               
-                <div className="roman-heading">{details[i].romanName}</div>
+                <div className="roman-heading">{romanName}</div>
   
                 <div className="eye">
                   <img src={eye} height={20}></img>
                   <span>&nbsp;1102</span>
                 </div>
                 <div className="info">
-                <div className="detail02">{details[i].clientName}</div>
-                <div className="detail">{details[i].designation}</div>
-                <div className="detail"> <a href={`tel:${details[i].phone01}`} className="link">{details[i].phone01}</a> /  <a href={`tel:${details[i].phone02}`} className="link">{details[i].phone02}</a></div>
-                <a href="mailto:scanntap94@gmail.com" className="link"><div className="detail">{details[i].email}</div></a>
+                <div className="detail02">{clientName}</div>
+                <div className="detail">{designation}</div>
+                <div className="detail"> <a href={`tel:${phone01}`} className="link">{phone01}</a> /  <a href={`tel:${phone02}`} className="link">{phone02}</a></div>
+                <a href="mailto:scanntap94@gmail.com" className="link"><div className="detail">{email}</div></a>
                 </div>
-                <div className="description">{details[i].description}</div>
+                <div className="description">{description}</div>
   
           </div>
-          <hr /> */}
+          <hr />
           {/* <div className="social-segment">
           <a href={`tel:${details[i].phone01}`} className="link"><div className="socials">
               <img src={phone} height={50} width={50}></img>
