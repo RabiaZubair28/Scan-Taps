@@ -15,7 +15,7 @@ import website from "../assets/web.png"
 import email from "../assets/gmail.png"
 import ytshorts from "../assets/yt-shorts.png"
 import locations from "../assets/location.png"
-// import eye from "../assets/eye.jpg"
+import eye from "../assets/eye.jpg"
 // import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 import "./client.css"
@@ -100,7 +100,7 @@ const currentPageUrl = window.location.href;
             
               <div className="roman-heading">{details[i].romanName}</div>
 
-              <div className="eye">
+              <div className="">
                 <img src={eye} height={20}></img>
                 <span>&nbsp;1102</span>
               </div>
