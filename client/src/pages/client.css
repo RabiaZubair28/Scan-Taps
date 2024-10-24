@@ -559,6 +559,8 @@ justify-content: center;
     font-weight: 700;
     text-align: center;
     padding-top: 2rem;
+    padding-inline: 2rem;
+    line-height: 2.5rem;
   }
   .roman-heading{
     font-family:'Times New Roman', Times, serif;
@@ -733,7 +735,8 @@ justify-content: center;
     padding-bottom: 0;
     text-align: center;
     padding-top: 1.75rem;
-    padding-inline: 1rem;
+    padding-inline: 2rem;
+    line-height: 2.5rem;
   }
   .roman-heading{
     font-family:'Times New Roman', Times, serif;
@@ -893,7 +896,8 @@ justify-content: center;
     font-weight: 700;
     padding-top: 1.5rem;
     text-align: center;
-    padding-inline: 0.75rem;
+    padding-inline: 1rem;
+    line-height: 2rem;
   }
   .roman-heading{
     font-family:'Times New Roman', Times, serif;
@@ -1053,7 +1057,8 @@ justify-content: center;
     font-weight: 900;
     padding-top: 1.5rem;
     text-align: center;
-    padding-inline: 0.75rem;
+    padding-inline: 1rem;
+    line-height: 2rem;
   }
   .roman-heading{
     font-family:'Times New Roman', Times, serif;
