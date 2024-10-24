@@ -84,6 +84,18 @@ const currentPageUrl = window.location.href;
       style={{ display: 'block', position: 'initial' }}
     >
       
+        <ImCross className="close" onClick={handleClose} />
+       
+          <div className="qr-div">
+        {/* <QRCodeCanvas id="qr" className="qr"  value={window.location.href} /> */}
+        </div>
+      
+        <div className="qr-btn2" onClick={()=>{
+                  downloadImg(details[i].qr)
+                  handleClose()
+      }} >
+            <FaDownload size={30} color="white" />
+        </div>
    
     </div>}
     { !show && <section className="main">
