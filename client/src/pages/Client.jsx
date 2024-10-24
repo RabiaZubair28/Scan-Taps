@@ -114,4 +114,7 @@ img10;
   console.log(companyName)
   console.log(name)
  
+  return (
+    <p>{name}</p>
+  )
 }
