@@ -75,5 +75,5 @@ var person;
   }
 
   console.log(person)
-  console.log(person.name);
+ 
 }
