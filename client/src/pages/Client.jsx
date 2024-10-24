@@ -100,7 +100,7 @@ const currentPageUrl = window.location.href;
             
               <div className="roman-heading">{details[i].romanName}</div>
 
-              <div className="">
+              <div className="eye">
                 <img src={eye} height={20}></img>
                 <span>&nbsp;1102</span>
               </div>
