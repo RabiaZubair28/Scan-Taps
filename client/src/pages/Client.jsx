@@ -155,8 +155,8 @@ img10;
   console.log(companyName)
   console.log(name)
 
-
-        return(
+  if(companyName == params.name)
+  {      return(
   
       <div>
        
@@ -208,137 +208,137 @@ img10;
           </div>
           <hr />
           <div className="social-segment">
-          <a href={`tel:${phone01}`} className="link"><div className="socials">
+          { (phone01 != "") && <a href={`tel:${phone01}`} className="link"><div className="socials">
               <img src={phone} height={50} width={50}></img>
               <div >
                 <p className="tag-heading">Phone / الهاتف</p>
                 <p className="details">{phone01}</p>
               </div>
-            </div></a>
-            <a href={`tel:${phone02}`} className="link"><div className="socials">
+            </div></a>}
+            { (phone02!= "") &&<a href={`tel:${phone02}`} className="link"><div className="socials">
               <img src={phone} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Phone / الهاتف</p>
                 <p className="details">{phone02}</p>
               </div>
-            </div></a>
-            <a href={`${googleMapLink}`} className="link">
+            </div></a>}
+            { (googleMapLink != "") &&<a href={`${googleMapLink}`} className="link">
               <div className="socials">
               <img src={addressImg} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Address / العنوان</p>
                 <p className="details">{address}</p>
               </div>
-            </div></a>
-            <a href={`https://wa.me/${whatsapp01}`} className="link"><div className="socials">
+            </div></a>}
+            { (whatsapp01 != "") &&<a href={`https://wa.me/${whatsapp01}`} className="link"><div className="socials">
               <img src={whatsapp} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Whatsapp / واتساب</p>
                 <p className="details">{whatsapp01}</p>
               </div>
-            </div></a>
-            <a href={`https://wa.me/${whatsapp02}`} className="link"><div className="socials" >
+            </div></a>}
+            { (whatsapp02 != "") &&<a href={`https://wa.me/${whatsapp02}`} className="link"><div className="socials" >
               <img src={whatsapp} height={50} width={50}></img>
               <div >
                 <p className="tag-heading">Whatsapp / واتساب</p>
                 <p className="details">{whatsapp02}</p>
               </div>
-            </div></a>
-            <a href={`${instagramLink}`} className="link"><div className="socials">
+            </div></a>}
+            { (instagramLink != "") &&<a href={`${instagramLink}`} className="link"><div className="socials">
               <img src={insta} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Instagram / انستغرام
                 </p>
                 <p className="details">{instagramLink}</p>
               </div>
-            </div></a>
-            <a href={`${snapchatLink}`} className="link"><div className="socials">
+            </div></a>}
+            { (snapchatLink != "") &&<a href={`${snapchatLink}`} className="link"><div className="socials">
               <img src={snap} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Snapchat / سناب شات</p>
                 <p className="details">{snapchatLink}</p>
               </div>
-            </div></a>
-            <a href={`${youtubeLink}`} className="link"><div className="socials">
+            </div></a>}
+            { (youtubeLink != "") &&<a href={`${youtubeLink}`} className="link"><div className="socials">
               <img src={yt} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Youtube / موقع يوتيوب</p>
                 <p className="details">{youtubeLink}</p>
               </div>
-            </div></a>
-            <a href={`${tiktokLink}`} className="link"><div className="socials">
+            </div></a>}
+            { (tiktokLink != "") &&<a href={`${tiktokLink}`} className="link"><div className="socials">
               <img src={tiktok} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Tiktok / تيك توك</p>
                 <p className="details">{tiktokLink}</p>
               </div>
-            </div></a>
-            <a href={`${twitterLink}`} className="link"><div className="socials">
+            </div></a>}
+            { (twitterLink != "") &&<a href={`${twitterLink}`} className="link"><div className="socials">
               <img src={threads} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Twitter / تويتر</p>
                 <p className="details">{twitterLink}</p>
               </div>
-            </div></a>
-            <a href={`${facebookLink}`} className="link"><div className="socials">
+            </div></a>}
+            { (facebookLink != "") &&<a href={`${facebookLink}`} className="link"><div className="socials">
               <img src={fb} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Facebook / فيسبوك</p>
                 <p className="details">{facebookLink}</p>
               </div>
-            </div></a>
-            <a href={`${googleMapLink}`} className="link"><div className="socials">
+            </div></a>}
+            { (googleMapLink != "") &&<a href={`${googleMapLink}`} className="link"><div className="socials">
               <img src={greview} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Google Reviews / تقييمات جوجل
                 </p>
                 <p className="details">{googleReviewLink}</p>
               </div>
-            </div></a>
+            </div></a>}
             
-            <a href={`${website}`} className="link"><div className="socials">
+            { (website != "") &&<a href={`${website}`} className="link"><div className="socials">
               <img src={websiteImg} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Website /رابط الموقع</p>
                 <p className="details">{website}</p>
               </div>
-            </div></a>
-            <a href={`mailto:${email}`} className="link"><div className="socials">
+            </div></a>}
+            { (email != "") &&<a href={`mailto:${email}`} className="link"><div className="socials">
               <img src={emailImg} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Email /جي ميل</p>
                 <p className="details">{email}</p>
               </div>
-            </div></a>
-            <a href={`${youtubeShortsLink}`} className="link"><div className="socials">
+            </div></a>}
+            { (youtubeShortsLink != "") &&<a href={`${youtubeShortsLink}`} className="link"><div className="socials">
               <img src={ytshorts} height={50} width={50}></img>
               <div >
                 <p className="tag-heading">YouTube Shorts / شورت يوتيوب</p>
                 <p className="details">{youtubeShortsLink}</p>
               </div>
-            </div></a>
-            <a href={`${googleMapLink}`} className="link"><div className="socials">
+            </div></a>}
+            { (googleMapLink != "") &&<a href={`${googleMapLink}`} className="link"><div className="socials">
               <img src={locations} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Location / خرائط جوجل</p>
                 <p className="details">{googleMapLink}</p>
               </div>
-            </div></a>
+            </div></a>}
           </div>
           <hr />
           <p className="image-gallery-heading">Image Gallery</p>
           <hr />
           <div className="image-gallery">
-            <a href={img01}><img src={img01} className="image"></img></a>
-            <a href={img02}><img src={img02} className="image"></img></a>
-            <a href={img03}><img src={img03} className="image"></img></a>
-            <a href={img04}><img src={img04} className="image"></img></a>
-            <a href={img05}><img src={img05} className="image"></img></a>
-            <a href={img06}><img src={img06} className="image"></img></a>
-            <a href={img07}><img src={img07} className="image"></img></a>
-            <a href={img08}><img src={img08} className="image"></img></a>
-            <a href={img09}><img src={img09} className="image"></img></a>
-            <a href={img10}><img src={img10} className="image"></img></a>
+          { (img01 != "") && <a href={img01}><img src={img01} className="image"></img></a>}
+          { (img02 != "") &&  <a href={img02}><img src={img02} className="image"></img></a>}
+          { (img03 != "") && <a href={img03}><img src={img03} className="image"></img></a>}
+          { (img04 != "") && <a href={img04}><img src={img04} className="image"></img></a>}
+          { (img05 != "") &&  <a href={img05}><img src={img05} className="image"></img></a>}
+          { (img06 != "") && <a href={img06}><img src={img06} className="image"></img></a>}
+          { (img07 != "") && <a href={img07}><img src={img07} className="image"></img></a>}
+          { (img08 != "") &&  <a href={img08}><img src={img08} className="image"></img></a>}
+          { (img09 != "") &&  <a href={img09}><img src={img09} className="image"></img></a>}
+          { (img10 != "") &&  <a href={img10}><img src={img10} className="image"></img></a>}
           </div>
           <hr />
           <p className="image-gallery-heading">Location</p>
@@ -394,5 +394,19 @@ img10;
           }
           </div>
         );
+      }
+      else{
+        return (
+          <div className=" content">
+        <h2 className="header" style={{ color:"white", textAlign:"center"}}>404</h2>
+        <h4 style={{ color:"white", textAlign:"center"}}>Sorry! Page not found</h4>
+        <p style={{ color:"white", textAlign:"center"}}>
+          Oops! It seems like the page you're trying to access doesn't exist.
+          If you believe there's an issue, feel free to report it, and we'll
+          look into it.
+        </p>
+      </div>
+        );
+      }
       }
 
