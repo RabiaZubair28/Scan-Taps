@@ -31,7 +31,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import {FacebookShareButton, TelegramShareButton, TwitterShareButton, LinkedinShareButton, WhatsappShareButton} from 'react-share'
 import { ImCross } from "react-icons/im";
 import axios from "axios";
-import ScaleLoader from "react-spinners/ScaleLoader";
+import { ScaleLoader } from "react-spinners/ScaleLoader";
 export const Client = () => {
 
   const [show, setShow] = useState(false);
