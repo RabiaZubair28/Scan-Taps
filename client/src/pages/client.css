@@ -28,6 +28,12 @@
 }
 
 @media screen and (max-width: 2500px) {
+  .spin{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-block: 20%
+  }
   .main{
     background-color: white;
     border: 1px solid aliceblue;
@@ -216,6 +222,12 @@ justify-content: center;
 }
 
 @media screen and (max-width: 1600px) {
+  .spin{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-block: 20%
+  }
   .main{
     background-color: white;
     border: 1px solid aliceblue;
@@ -399,6 +411,12 @@ justify-content: center;
 }
 }
 @media screen and (max-width: 1480px) {
+  .spin{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-block: 20%
+  }
   .main{
     background-color: white;
     border: 1px solid aliceblue;
@@ -584,6 +602,12 @@ justify-content: center;
 }
 }
 @media screen and (max-width: 1200px) {
+  .spin{
+    display:"flex";
+    align-items:"center";
+    justify-content:"center";
+    margin-block:"24%"
+  }
   .main{
     background-color: white;
     border: 1px solid aliceblue;
@@ -768,6 +792,12 @@ justify-content: center;
 }
 }
 @media screen and (max-width: 900px) {
+  .spin{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-block: 24%
+  }
   .main{
     background-color: white;
     border: 1px solid aliceblue;
@@ -942,6 +972,12 @@ justify-content: center;
 }
 }
 @media screen and (max-width: 650px) {
+  .spin{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-block: 30%
+  }
   .main{
     background-color: white;
     border: 1px solid aliceblue;
@@ -1115,6 +1151,12 @@ justify-content: center;
 }
 }
 @media screen and (max-width: 550px) {
+  .spin{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-block: 45%
+  }
   .main{
     background-color: white;
     border: 1px solid aliceblue;
