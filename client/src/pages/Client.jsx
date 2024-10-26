@@ -223,7 +223,7 @@ img10;
                 <p className="details">{phone02}</p>
               </div>
             </div></a>}
-            { (googleMapLink != "") &&<a href={`${googleMapLink}`} className="link">
+            { (googleMapLink != "") && <a href={`${googleMapLink}`} className="link">
               <div className="socials">
               <img src={addressImg} height={50} width={50}></img>
               <div>
@@ -288,7 +288,7 @@ img10;
                 <p className="details">{facebookLink}</p>
               </div>
             </div></a>}
-            { (googleMapLink != "") &&<a href={`${googleMapLink}`} className="link"><div className="socials">
+            { (googleReviewLink != "") &&<a href={`${googleReviewLink}`} className="link"><div className="socials">
               <img src={greview} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Google Reviews / تقييمات جوجل
