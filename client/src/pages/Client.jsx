@@ -199,8 +199,8 @@ img10;
                   <span>&nbsp;1102</span>
                 </div>
                 <div className="info">
-                <div className="detail02">{clientName}</div>
-                <div className="detail">{designation}</div>
+                { (clientName!= "") &&<div className="detail02">{clientName}</div>}
+                { (designation!= "") &&<div className="detail">{designation}</div>}
                 <div className="detail"> <a href={`tel:${phone01}`} className="link">{phone01}</a> /  <a href={`tel:${phone02}`} className="link">{phone02}</a></div>
                 <a href={`mailto:${email}`} className="link"><div className="detail">{email}</div></a>
                 </div>
