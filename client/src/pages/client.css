@@ -219,6 +219,18 @@ justify-content: center;
   padding-top: 0.5rem;
   text-align: center;
 }
+.eye{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  padding-inline: 43%;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
 }
 
 @media screen and (max-width: 1600px) {
@@ -408,6 +420,18 @@ justify-content: center;
   padding-bottom: 1rem;
   padding-top: 0.5rem;
   text-align: center;
+}
+.eye{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  padding-inline: 43%;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
 }
 }
 @media screen and (max-width: 1480px) {
@@ -600,6 +624,18 @@ justify-content: center;
   padding-top: 0.5rem;
   text-align: center;
 }
+.eye{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  padding-inline: 43%;
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
 }
 @media screen and (max-width: 1200px) {
   .spin{
@@ -790,6 +826,18 @@ justify-content: center;
   padding-top: 0.5rem;
   text-align: center;
 }
+.eye{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  padding-inline: 43%;
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
 }
 @media screen and (max-width: 900px) {
   .spin{
@@ -970,6 +1018,18 @@ justify-content: center;
   padding-top: 0.5rem;
   text-align: center;
 }
+.eye{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  padding-inline: 43%;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
 }
 @media screen and (max-width: 650px) {
   .spin{
@@ -1148,6 +1208,18 @@ justify-content: center;
   padding-bottom: 1rem;
   padding-top: 0.5rem;
   text-align: center;
+}
+.eye{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  padding-inline: 43%;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.75rem;
 }
 }
 @media screen and (max-width: 550px) {
@@ -1329,9 +1401,6 @@ justify-content: center;
   padding-top: 0.75rem;
   text-align: center;
 }
-
-}
-
 .eye{
   font-family:Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -1342,9 +1411,10 @@ justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 0.5rem;
 }
 
-
+}
 
 .socials{
   display: flex;
