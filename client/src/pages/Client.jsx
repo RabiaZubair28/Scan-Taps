@@ -27,7 +27,7 @@ import { TiSocialTwitter } from "react-icons/ti";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { FaTelegramPlane } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
-
+import vCard from "vcards-js"
 import {FacebookShareButton, TelegramShareButton, TwitterShareButton, LinkedinShareButton, WhatsappShareButton} from 'react-share'
 import { ImCross } from "react-icons/im";
 import axios from "axios";
@@ -53,6 +53,25 @@ const toDataURL = async (url) => {
   return imageDataUrl;
 };
 
+const generateVCF = () => {
+  
+  const vcf = vCard();
+
+
+vCard.firstName = clientName;
+vCard.organization = companyName;
+vCard.workPhone = phone01;
+vCard.title = designation;
+
+  console.log(vcf.getFormattedString());
+  const linkElement = document.createElement("a");
+  linkElement.setAttribute("href",`data:,${vcf.getFormattedString()}`);
+  linkElement.setAttribute("download","card.vcf");
+  linkElement.style.display = "none";
+  document.body.appendChild(linkElement);
+  linkElement.click()
+  document.body.removeChild(linkElement);
+}
 
 const downloadImg = async(link) => {
     // text content
@@ -352,9 +371,7 @@ img10;
               <IoQrCodeSharp size={35} color="white" />
               </div>
        
-              <div className="qr-btn" onClick={()=>{
-                downloadImg(qr)
-              }} value="download">
+              <div className="qr-btn" onClick={generateVCF} value="download">
               <FaDownload size={30} color="white" />
               </div>
           </div>
