@@ -118,6 +118,10 @@ const detailSchema = new Schema({
   password: {
     type: String,
   },
+  visitCount: {
+    type: Number,
+    default: 0,
+  },
 });
 
 const Detail = new model("Detail", detailSchema);

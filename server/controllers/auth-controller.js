@@ -52,6 +52,7 @@ const client = async (req, res) => {
       img08,
       img09,
       img10,
+      visitCount,
     } = req.body;
 
     const userCreated = await Client.create({
@@ -93,6 +94,7 @@ const client = async (req, res) => {
       img08,
       img09,
       img10,
+      visitCount,
     });
 
     res.status(201).json({

@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const Client = require("./models/client-model.js");
 const authRoute = require("./router/auth-router.js");
 const contactRoute = require("./router/contact-router.js");
 const detailRoute = require("./router/detail-router");
@@ -21,6 +22,24 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/data", detailRoute);
+
+// Visit count endpoint
+app.post("/api/visit/:clientId", async (req, res) => {
+  const clientId = req.params.clientId;
+  try {
+    let client = await Client.findById(clientId);
+    if (!client) {
+      return res.status(404).json({ message: "Client not found" });
+    }
+
+    client.visitCount += 1;
+    await client.save();
+    res.json({ count: client.visitCount });
+  } catch (error) {
+    console.error("Error updating visit count:", error);
+    res.status(500).json({ message: "Error updating visit count" });
+  }
+});
 
 app.use(errorMiddleware);
 

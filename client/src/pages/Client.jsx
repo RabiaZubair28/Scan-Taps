@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useAuth } from "../store/auth";
+import { useEffect } from "react";
 import { QRCodeCanvas} from 'qrcode.react';
 import phone from "../assets/phone.png"
 import addressImg from "../assets/adress.png"
@@ -53,25 +54,27 @@ const toDataURL = async (url) => {
   return imageDataUrl;
 };
 
-const generateVCF = () => {
-  
-  const vcf = vCard();
+
+const [visitCount, setVisitCount] = useState(0);
+  const clientId = "6718de5303653c2e096b599f"; // Used it for a Client make it dynamic by fetching the current client id
+
+  useEffect(() => {
+    const fetchAndIncrementVisitCount = async () => {
+      try {
+        console.log("Fetching visit count...");
+        const incrementResponse = await axios.post(`https://scantaps.onrender.com//api/visit/${clientId}`);
+        console.log("Current visit count fetched.");
+        setVisitCount(incrementResponse.data.count);
+        console.log(`Visit count for client ${clientId} incremented. New count:`, incrementResponse.data.count);
+      } catch (error) {
+        console.error("Error fetching or incrementing visit count:", error);
+      }
+    };
+
+    fetchAndIncrementVisitCount();
+  }, [clientId]);
 
 
-vCard.firstName = clientName;
-vCard.organization = companyName;
-vCard.workPhone = phone01;
-vCard.title = designation;
-
-  console.log(vcf.getFormattedString());
-  const linkElement = document.createElement("a");
-  linkElement.setAttribute("href",`data:,${vcf.getFormattedString()}`);
-  linkElement.setAttribute("download","card.vcf");
-  linkElement.style.display = "none";
-  document.body.appendChild(linkElement);
-  linkElement.click()
-  document.body.removeChild(linkElement);
-}
 
 const downloadImg = async(link) => {
     // text content
@@ -215,7 +218,7 @@ img10;
   
                 <div className="eye">
                   <img src={eye} height={20}></img>
-                  <span>&nbsp;1102</span>
+                  <span>&nbsp;{visitCount}</span>
                 </div>
                 <div className="info">
                 { (clientName!= "") &&<div className="detail02">{clientName}</div>}

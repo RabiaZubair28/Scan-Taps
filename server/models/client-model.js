@@ -117,6 +117,10 @@ const clientSchema = new mongoose.Schema({
   password: {
     type: String,
   },
+  visitCount: {
+    type: Number,
+    default: 0,
+  },
 });
 
 const Client = new mongoose.model("Client", clientSchema);
