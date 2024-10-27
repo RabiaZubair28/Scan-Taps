@@ -56,7 +56,7 @@ const toDataURL = async (url) => {
 
 
 var [visitCount, setVisitCount] = useState(0);
-var clientId = "6718de5303653c2e096b599f"; // Used it for a Client make it dynamic by fetching the current client id
+var clientId = _id; // Used it for a Client make it dynamic by fetching the current client id
 
   useEffect(() => {
     const fetchAndIncrementVisitCount = async () => {
@@ -171,6 +171,7 @@ img10;
         img08 = details[i].img08;
         img09 = details[i].img09;
         img10 = details[i].img10;
+        _id = details[i]._id;
     }
   }
 
