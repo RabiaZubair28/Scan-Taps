@@ -62,7 +62,7 @@ const [visitCount, setVisitCount] = useState(0);
     const fetchAndIncrementVisitCount = async () => {
       try {
         console.log("Fetching visit count...");
-        const incrementResponse = await axios.post(`https://scantaps.onrender.com//api/visit/${clientId}`);
+        const incrementResponse = await axios.post(`https://scantaps.onrender.com/api/visit/${clientId}`);
         console.log("Current visit count fetched.");
         setVisitCount(incrementResponse.data.count);
         console.log(`Visit count for client ${clientId} incremented. New count:`, incrementResponse.data.count);
@@ -127,8 +127,7 @@ img06,
 img07,
 img08,
 img09,
-img10,
-visitCount;
+img10;
 
   for(let i=0; i < details.length; i++)
   {
