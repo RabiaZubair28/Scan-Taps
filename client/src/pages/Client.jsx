@@ -90,7 +90,7 @@ const currentPageUrl = window.location.href;
 
 
 
-var companyName,
+var _id, companyName,
 name,
 description,
 phone01,
@@ -171,7 +171,6 @@ img10;
         img08 = details[i].img08;
         img09 = details[i].img09;
         img10 = details[i].img10;
-        visitCount = details[i].visitCount;
     }
   }
 
