@@ -62,7 +62,7 @@ var clientId = "6718de5303653c2e096b599f"; // Used it for a Client make it dynam
     const fetchAndIncrementVisitCount = async () => {
       try {
         console.log("Fetching visit count...");
-        const incrementResponse = await axios.post(`https://scantaps.onrender.com/api/visit/${clientId}`);
+        const incrementResponse = await axios.post(`https://scantaps.onrender.com/api/visit/${_id}`);
         console.log("Current visit count fetched.");
         setVisitCount(incrementResponse.data.count);
         console.log(`Visit count for client ${clientId} incremented. New count:`, incrementResponse.data.count);
