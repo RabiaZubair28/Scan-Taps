@@ -127,7 +127,8 @@ img06,
 img07,
 img08,
 img09,
-img10;
+img10,
+visitCount;
 
   for(let i=0; i < details.length; i++)
   {
@@ -171,7 +172,7 @@ img10;
         img08 = details[i].img08;
         img09 = details[i].img09;
         img10 = details[i].img10;
-
+        visitCount = details[i].visitCount;
     }
   }
 
@@ -375,7 +376,7 @@ img10;
               </div>
        
               <div className="qr-btn" onClick={
-                downloadImg(window.location.href)
+               ()=>{ downloadImg(window.location.href)}
               } value="download">
               <FaDownload size={30} color="white" />
               </div>
