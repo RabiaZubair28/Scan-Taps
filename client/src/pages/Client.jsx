@@ -147,7 +147,7 @@ img10;
 var [visitCount, setVisitCount] = useState(0);
 
 console.log(_id)// Used it for a Client make it dynamic by fetching the current client id
-var clientId = _id; 
+var clientId = "6718de5303653c2e096b599f"; 
   useEffect(() => {
     const fetchAndIncrementVisitCount = async () => {
       try {
