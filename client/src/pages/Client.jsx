@@ -374,7 +374,7 @@ img10;
               <IoQrCodeSharp size={35} color="white" />
               </div>
        
-              <div className="qr-btn" onClick={generateVCF} value="download">
+              <div className="qr-btn" value="download">
               <FaDownload size={30} color="white" />
               </div>
           </div>
