@@ -243,7 +243,7 @@ const currentPageUrl = window.location.href;
                   }}>&nbsp;{visitCount} &nbsp;&nbsp;&nbsp;&nbsp;</span>
                   <FaDownload size={20} onClick={downloadContactCard} color="black" />
                   <span style={{display:"flex",alignItems:"center",justifyContent:"center"
-                  }}>&nbsp;Save Info</span>
+                  }} onClick={downloadContactCard} >&nbsp;Save Info</span>
           
                 </div>
                 <div className="info">
