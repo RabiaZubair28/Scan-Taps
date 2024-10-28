@@ -180,29 +180,12 @@ END:VCARD`;
     const blob = new Blob([vcard], { type: "text/vcard" });
     const url = URL.createObjectURL(blob);
 
-    if (navigator.share) {
-        navigator.share({
-            title: 'Save Contact',
-            text: 'Save this contact to your address book',
-        })
-        .then(() => {
-            console.log('Contact shared successfully');
-        })
-        .catch((error) => {
-            console.error('Error sharing contact:', error);
-            const newLink = document.createElement('a');
-            newLink.download = `${companyName}.vcf`;
-            newLink.href = url;
-            newLink.click();
-        });
-    } else {
+  
         const newLink = document.createElement('a');
         newLink.download = `${companyName}.vcf`;
         newLink.href = url;
         newLink.click();
     }
-};
-
 const downloadImg = async(link) => {
     // text content
     const a = document.createElement("a");
