@@ -240,6 +240,9 @@ const currentPageUrl = window.location.href;
                 <div className="eye">
                   <img src={eye} height={20}></img>
                   <span>&nbsp;{visitCount}</span>
+                  <div className="qr-btn" onClick={downloadContactCard} value="download">
+              <FaDownload size={15} color="black" />
+              </div>
                 </div>
                 <div className="info">
                 { (clientName!= "") &&<div className="detail02">{clientName}</div>}
