@@ -238,10 +238,12 @@ const currentPageUrl = window.location.href;
                 <div className="roman-heading">{romanName}</div>
   
                 <div className="eye">
-                  <img src={eye} height={20}></img>
-                  <span>&nbsp;{visitCount} &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <img src={eye} height={25}></img>
+                  <span style={{display:"flex",alignItems:"center",justifyContent:"center"
+                  }}>&nbsp;{visitCount} &nbsp;&nbsp;&nbsp;&nbsp;</span>
                   <FaDownload size={20} onClick={downloadContactCard} color="black" />
-                  
+                  <span style={{display:"flex",alignItems:"center",justifyContent:"center"
+                  }}>&nbsp;Save Info</span>
           
                 </div>
                 <div className="info">
