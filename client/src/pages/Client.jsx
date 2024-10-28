@@ -164,6 +164,51 @@ console.log(_id)// Used it for a Client make it dynamic by fetching the current 
     fetchAndIncrementVisitCount();
   }, [clientId]);
 
+
+  const downloadContactCard = async () => {
+    const contact = {
+        name: "Kevin Peterson",
+        phone: "+12345678911",
+        mobile: "+09876543211",  // Another mobile number if needed
+        email: "kevin@gmail.com",
+    };
+
+    // Create a vCard file
+    const vcard = `BEGIN:VCARD
+VERSION:3.0
+N:${contact.name};;;;
+FN:${contact.name}
+TEL;CELL:${contact.phone}
+TEL;CELL:${contact.mobile}
+EMAIL;HOME:${contact.email}
+END:VCARD`;
+
+    const blob = new Blob([vcard], { type: "text/vcard" });
+    const url = URL.createObjectURL(blob);
+
+    if (navigator.share) {
+        navigator.share({
+            title: 'Save Contact',
+            text: 'Save this contact to your address book',
+        })
+        .then(() => {
+            console.log('Contact shared successfully');
+        })
+        .catch((error) => {
+            console.error('Error sharing contact:', error);
+            const newLink = document.createElement('a');
+            newLink.download = `${contact.name}.vcf`;
+            newLink.href = url;
+            newLink.click();
+        });
+    } else {
+        const newLink = document.createElement('a');
+        newLink.download = `${contact.name}.vcf`;
+        newLink.href = url;
+        newLink.click();
+    }
+};
+
 const downloadImg = async(link) => {
     // text content
     const a = document.createElement("a");
@@ -373,9 +418,7 @@ const currentPageUrl = window.location.href;
               <IoQrCodeSharp size={35} color="white" />
               </div>
        
-              <div className="qr-btn" onClick={
-               ()=>{ downloadImg(window.location.href)}
-              } value="download">
+              <div className="qr-btn" onClick={downloadContactCard} value="download">
               <FaDownload size={30} color="white" />
               </div>
           </div>
