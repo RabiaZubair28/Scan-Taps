@@ -191,13 +191,13 @@ END:VCARD`;
         .catch((error) => {
             console.error('Error sharing contact:', error);
             const newLink = document.createElement('a');
-            newLink.download = `${contact.name}.vcf`;
+            newLink.download = `${companyName}.vcf`;
             newLink.href = url;
             newLink.click();
         });
     } else {
         const newLink = document.createElement('a');
-        newLink.download = `${contact.name}.vcf`;
+        newLink.download = `${companyName}.vcf`;
         newLink.href = url;
         newLink.click();
     }
