@@ -170,7 +170,7 @@ console.log(_id)// Used it for a Client make it dynamic by fetching the current 
     // Create a vCard file
     const vcard = `BEGIN:VCARD
 VERSION:3.0
-N:${companyName};;;;
+N:${name};;;;
 FN:${companyName}
 TEL;CELL:${phone01}
 TEL;CELL:${phone02}
