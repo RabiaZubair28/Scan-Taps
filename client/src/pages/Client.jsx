@@ -239,7 +239,7 @@ const currentPageUrl = window.location.href;
   
                 <div className="eye">
                   <img src={eye} height={20}></img>
-                  <span>&nbsp;{visitCount}</span>
+                  <span>&nbsp;{visitCount} &nbsp;&nbsp;</span>
                   <div className="qr-btn" onClick={downloadContactCard} value="download">
               <FaDownload size={15} color="black" />
               </div>
