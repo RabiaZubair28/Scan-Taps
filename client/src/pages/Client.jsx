@@ -240,7 +240,7 @@ const currentPageUrl = window.location.href;
                 <div className="eye">
                   <img src={eye} height={20}></img>
                   <span>&nbsp;{visitCount} &nbsp;&nbsp;&nbsp;&nbsp;</span>
-                  <FaDownload size={15} onClick={downloadContactCard} color="black" />
+                  <FaDownload size={30} onClick={downloadContactCard} color="black" />
           
                 </div>
                 <div className="info">
