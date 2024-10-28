@@ -166,21 +166,15 @@ console.log(_id)// Used it for a Client make it dynamic by fetching the current 
 
 
   const downloadContactCard = async () => {
-    const contact = {
-        name: "Kevin Peterson",
-        phone: "+12345678911",
-        mobile: "+09876543211",  // Another mobile number if needed
-        email: "kevin@gmail.com",
-    };
-
+   
     // Create a vCard file
     const vcard = `BEGIN:VCARD
 VERSION:3.0
-N:${contact.name};;;;
-FN:${contact.name}
-TEL;CELL:${contact.phone}
-TEL;CELL:${contact.mobile}
-EMAIL;HOME:${contact.email}
+N:${companyName};;;;
+FN:${companyName}
+TEL;CELL:${phone01}
+TEL;CELL:${phone02}
+EMAIL;HOME:${email}
 END:VCARD`;
 
     const blob = new Blob([vcard], { type: "text/vcard" });
