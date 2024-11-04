@@ -393,9 +393,10 @@ const currentPageUrl = window.location.href;
           { (img09 != "") &&  <a href={img09}><img src={img09} className="image"></img></a>}
           { (img10 != "") &&  <a href={img10}><img src={img10} className="image"></img></a>}
           </div>
+         
+          <hr />
           { (location!= "") &&
           <div>
-          <hr />
           <p className="image-gallery-heading">Location</p>
           <hr />
           <div className="location">
