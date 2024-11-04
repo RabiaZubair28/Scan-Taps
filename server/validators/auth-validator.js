@@ -15,21 +15,13 @@ const clientSchema = z.object({
     .min(10, { message: "Phone must be atleast of 10 characters" })
     .max(20, { message: "Phone must be not more than 20 characters" }),
 
-  phone02: z
-    .string()
-    .trim()
-    .min(10, { message: "Phone must be atleast of 10 characters" })
-    .max(20, { message: "Phone must be not more than 20 characters" }),
+  phone02: z.string(),
   whatsapp01: z
     .string()
     .trim()
     .min(10, { message: "Phone must be atleast of 10 characters" })
     .max(20, { message: "Phone must be not more than 20 characters" }),
-  whatsapp02: z
-    .string()
-    .trim()
-    .min(10, { message: "Phone must be atleast of 10 characters" })
-    .max(20, { message: "Phone must be not more than 20 characters" }),
+  whatsapp02: z.string(),
 
   companyName: z
     .string()
