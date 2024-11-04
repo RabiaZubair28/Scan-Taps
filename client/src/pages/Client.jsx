@@ -250,7 +250,10 @@ const currentPageUrl = window.location.href;
                 <div className="info">
                 { (clientName!= "") &&<div className="detail02">{clientName}</div>}
                 { (designation!= "") &&<div className="detail">{designation}</div>}
-                <div className="detail"> <a href={`tel:${phone01}`} className="link">{phone01}</a> /  <a href={`tel:${phone02}`} className="link">{phone02}</a></div>
+                <div className="detail">
+                   <a href={`tel:${phone01}`} className="link">{phone01}</a> 
+                   
+                   { (phone02!= "") && <a href={`tel:${phone02}`} className="link"> / {phone02}</a>}</div>
                 <a href={`mailto:${email}`} className="link"><div className="detail">{email}</div></a>
                 </div>
                 <div className="description">{description}</div>
@@ -401,7 +404,7 @@ const currentPageUrl = window.location.href;
               <IoQrCodeSharp size={35} color="white" />
               </div>
        
-              <div className="qr-btn" onClick={downloadImg(qr)} value="download">
+              <div className="qr-btn" onClick={()=>{downloadImg(qr)}} value="download">
               <FaDownload size={30} color="white" />
               </div>
           </div>
