@@ -241,10 +241,11 @@ const currentPageUrl = window.location.href;
                   <img src={eye} height={25}></img>
                   <span style={{display:"flex",alignItems:"center",justifyContent:"center",
                   }}>&nbsp;{visitCount} &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <div style={{backgroundColor:"rgb(22, 33, 92)"}}>
                   <FaDownload size={20} onClick={downloadContactCard} color="white" />
                   <span style={{display:"flex",alignItems:"center",color:"white",justifyContent:"center"
                   }} onClick={downloadContactCard} >&nbsp;&nbsp;Save Info</span>
-          
+                </div>
                 </div>
                 <div className="info">
                 { (clientName!= "") &&<div className="detail02">{clientName}</div>}
