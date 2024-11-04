@@ -212,7 +212,7 @@ const currentPageUrl = window.location.href;
           <ImCross className="close" onClick={handleClose} />
          
             <div className="qr-div">
-          <QRCodeCanvas id="qr" className="qr"  value={window.location.href} />
+          <QRCodeCanvas id="qr" className="qr"  value={qr} />
           </div>
           <div className="qr2-div">
           <div className="qr-btn2" onClick={()=>{
@@ -235,7 +235,7 @@ const currentPageUrl = window.location.href;
           <div>
                 <div className="eng-heading">{name}</div>
               
-                <div className="roman-heading">{romanName}</div>
+                { (romanName != "") && <div className="roman-heading">{romanName}</div>}
   
                 <div className="eye">
                   <img src={eye} height={25}></img>
@@ -401,7 +401,7 @@ const currentPageUrl = window.location.href;
               <IoQrCodeSharp size={35} color="white" />
               </div>
        
-              <div className="qr-btn" onClick={downloadContactCard} value="download">
+              <div className="qr-btn" onClick={downloadImg(qr)} value="download">
               <FaDownload size={30} color="white" />
               </div>
           </div>
