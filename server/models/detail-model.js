@@ -13,6 +13,9 @@ const detailSchema = new Schema({
   phone01: {
     type: String,
   },
+  flag: {
+    type: Boolean,
+  },
   clientName: {
     type: String,
   },

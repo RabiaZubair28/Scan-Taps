@@ -30,7 +30,7 @@ const clientSchema = z.object({
 
   description: z.string(),
   name: z.string(),
-
+  flag: z.boolean(),
   address: z.string(),
 
   instagramLink: z.string(),

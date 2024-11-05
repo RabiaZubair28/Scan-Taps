@@ -15,6 +15,9 @@ const clientSchema = new mongoose.Schema({
   phone02: {
     type: String,
   },
+  flag: {
+    type: Boolean,
+  },
   clientName: {
     type: String,
   },

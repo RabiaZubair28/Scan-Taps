@@ -52,6 +52,7 @@ const client = async (req, res) => {
       img08,
       img09,
       img10,
+      flag,
       visitCount,
     } = req.body;
 
@@ -94,6 +95,7 @@ const client = async (req, res) => {
       img08,
       img09,
       img10,
+      flag,
       visitCount,
     });
 
