@@ -2,12 +2,7 @@ const { z } = require("zod");
 
 const clientSchema = z.object({
   serialNo: z.string(),
-  email: z
-    .string()
-    .trim()
-    .email({ message: "Invalid email address" })
-    .min(3, { message: "Email must be atleast of 3 characters" })
-    .max(255, { message: "Email must be not more than 255 characters" }),
+  email: z.string(),
 
   phone01: z
     .string()
