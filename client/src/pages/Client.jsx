@@ -309,7 +309,7 @@ const currentPageUrl = window.location.href;
             { (snapchatLink != "") &&<a href={`${snapchatLink}`} className="link"><div className="socials">
               <img src={snap} height={50} width={50}></img>
               <div>
-                <p className="tag-heading">Snapchat / سناب شات{ (flag!= true) &&<span> / سناب شات</span>}</p>
+                <p className="tag-heading">Snapchat { (flag!= true) &&<span> / سناب شات</span>}</p>
                 <p className="details">{snapchatLink}</p>
               </div>
             </div></a>}
