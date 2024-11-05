@@ -91,7 +91,8 @@ img06,
 img07,
 img08,
 img09,
-img10;
+img10,
+flag;
 
 
   for(let i=0; i < details.length; i++)
@@ -126,6 +127,7 @@ img10;
         location = details[i].location;
         romanName = details[i].romanName;
         password = details[i].password;
+        flag = details[i].flag;
         img01 = details[i].img01;
         img02 = details[i].img02;
         img03 = details[i].img03;
@@ -264,7 +266,7 @@ const currentPageUrl = window.location.href;
           { (phone01 != "") && <a href={`tel:${phone01}`} className="link"><div className="socials">
               <img src={phone} height={50} width={50}></img>
               <div >
-                <p className="tag-heading">Phone / الهاتف</p>
+                <p className="tag-heading">Phone { (flag!= true) &&<span> / الهاتف</span>}</p>
                 <p className="details">{phone01}</p>
               </div>
             </div></a>}
