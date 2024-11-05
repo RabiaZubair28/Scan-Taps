@@ -202,7 +202,7 @@ END:VCARD`;
           })
   }
 
-  const toDataURL = async (url) => {
+  const toDataURL02 = async (url) => {
 
   const response = await axios.get(url, { responseType: "blob" });
   const imageDataUrl = URL.createObjectURL(response.data);
@@ -212,7 +212,7 @@ END:VCARD`;
 const downloadImg = async(link) => {
     // text content
     const a = document.createElement("a");
-    a.href = await toDataURL(link);
+    a.href = await toDataURL02(link);
     a.download = "QR.png";
     document.body.appendChild(a);
     a.click();
