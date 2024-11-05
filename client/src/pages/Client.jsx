@@ -214,11 +214,11 @@ const currentPageUrl = window.location.href;
           <ImCross className="close" onClick={handleClose} />
          
             <div className="qr-div">
-          <QRCodeCanvas id="qr" className="qr"  value={qr} />
+          <QRCodeCanvas id="qr" className="qr"  value={window.location.href} />
           </div>
           <div className="qr2-div">
           <div className="qr-btn2" onClick={()=>{
-                    downloadImg(qr)
+                    downloadImg(window.location.href)
                     handleClose()
         }} >
               <FaDownload size={30} color="white" />
