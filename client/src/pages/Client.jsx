@@ -189,13 +189,13 @@ END:VCARD`;
         newLink.click();
     }
 
-    const toDataURL = async (url) => {
+  const toDataURL02 = async (url) => {
 
-      const response = await axios.get(url, { responseType: "blob" });
-      const imageDataUrl = URL.createObjectURL(response.data);
+  const response = await axios.get(url, { responseType: "blob" });
+  const imageDataUrl = URL.createObjectURL(response.data);
     
-      return imageDataUrl;
-    };
+  return imageDataUrl;
+};
 const downloadImg = async(link) => {
     // text content
     const a = document.createElement("a");
@@ -226,7 +226,7 @@ const currentPageUrl = window.location.href;
           </div>
           <div className="qr2-div">
           <div className="qr-btn2" onClick={()=>{
-                    toDataURL(window.location.href)
+                    toDataURL02(window.location.href)
                     handleClose()
         }} >
               <FaDownload size={30} color="white" />
