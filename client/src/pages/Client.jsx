@@ -428,7 +428,7 @@ const currentPageUrl = window.location.href;
               <IoQrCodeSharp size={35} color="white" />
               </div>
        
-              <div className="qr-btn" onClick={()=>{downloadImg(qr)}} value="download">
+              <div className="qr-btn" onClick={downloadContactCard} value="download">
               <FaDownload size={30} color="white" />
               </div>
           </div>
