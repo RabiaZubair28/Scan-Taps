@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { useEffect } from "react";
 import { QRCodeCanvas} from 'qrcode.react';
+import html2canvas from "html2canvas";
+import { jsPDF } from "jspdf";
 import phone from "../assets/phone.png"
 import addressImg from "../assets/adress.png"
 import whatsapp from "../assets/whatsapp.png"
@@ -189,7 +191,18 @@ END:VCARD`;
         newLink.click();
     }
 
-  const toDataURL02 = async (url) => {
+    const downloadQr = (rootEle) => {
+      const input = document.getElementById(rootEle);
+      html2canvas(input)
+          .then((canvas) => {
+              const imgData = canvas.toDataURL('image/png');
+              const pdf = new jsPDF();
+              pdf.addImage(imgData, 'JPEG', 0, 0);
+              pdf.save(`QR.pdf`);
+          })
+  }
+
+  const toDataURL = async (url) => {
 
   const response = await axios.get(url, { responseType: "blob" });
   const imageDataUrl = URL.createObjectURL(response.data);
@@ -226,7 +239,7 @@ const currentPageUrl = window.location.href;
           </div>
           <div className="qr2-div">
           <div className="qr-btn2" onClick={()=>{
-                    toDataURL02(window.location.href)
+                    downloadQr("qr")
                     handleClose()
         }} >
               <FaDownload size={30} color="white" />
