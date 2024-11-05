@@ -273,7 +273,7 @@ const currentPageUrl = window.location.href;
             { (phone02!= "") &&<a href={`tel:${phone02}`} className="link"><div className="socials">
               <img src={phone} height={50} width={50}></img>
               <div>
-                <p className="tag-heading">Phone / الهاتف</p>
+                <p className="tag-heading">Phone { (flag!= true) &&<span> / الهاتف</span>}</p>
                 <p className="details">{phone02}</p>
               </div>
             </div></a>}
@@ -281,72 +281,70 @@ const currentPageUrl = window.location.href;
               <div className="socials">
               <img src={addressImg} height={50} width={50}></img>
               <div>
-                <p className="tag-heading">Address / العنوان</p>
+                <p className="tag-heading">Address { (flag!= true) &&<span> / العنوان</span>}</p>
                 <p className="details">{address}</p>
               </div>
             </div></a>}
             { (whatsapp01 != "") &&<a href={`https://wa.me/${whatsapp01}`} className="link"><div className="socials">
               <img src={whatsapp} height={50} width={50}></img>
               <div>
-                <p className="tag-heading">Whatsapp / واتساب</p>
+                <p className="tag-heading">Whatsapp { (flag!= true) &&<span> / واتساب</span>}</p>
                 <p className="details">{whatsapp01}</p>
               </div>
             </div></a>}
             { (whatsapp02 != "") &&<a href={`https://wa.me/${whatsapp02}`} className="link"><div className="socials" >
               <img src={whatsapp} height={50} width={50}></img>
               <div >
-                <p className="tag-heading">Whatsapp / واتساب</p>
+                <p className="tag-heading">Whatsapp { (flag!= true) &&<span> / واتساب</span>}</p>
                 <p className="details">{whatsapp02}</p>
               </div>
             </div></a>}
             { (instagramLink != "") &&<a href={`${instagramLink}`} className="link"><div className="socials">
               <img src={insta} height={50} width={50}></img>
               <div>
-                <p className="tag-heading">Instagram / انستغرام
-                </p>
+                <p className="tag-heading">Instagram { (flag!= true) &&<span> / انستغرام</span>}</p>
                 <p className="details">{instagramLink}</p>
               </div>
             </div></a>}
             { (snapchatLink != "") &&<a href={`${snapchatLink}`} className="link"><div className="socials">
               <img src={snap} height={50} width={50}></img>
               <div>
-                <p className="tag-heading">Snapchat / سناب شات</p>
+                <p className="tag-heading">Snapchat / سناب شات{ (flag!= true) &&<span> / سناب شات</span>}</p>
                 <p className="details">{snapchatLink}</p>
               </div>
             </div></a>}
             { (youtubeLink != "") &&<a href={`${youtubeLink}`} className="link"><div className="socials">
               <img src={yt} height={50} width={50}></img>
               <div>
-                <p className="tag-heading">Youtube / موقع يوتيوب</p>
+                <p className="tag-heading">Youtube { (flag!= true) &&<span> / موقع يوتيوب</span>}</p>
                 <p className="details">{youtubeLink}</p>
               </div>
             </div></a>}
             { (tiktokLink != "") &&<a href={`${tiktokLink}`} className="link"><div className="socials">
               <img src={tiktok} height={50} width={50}></img>
               <div>
-                <p className="tag-heading">Tiktok / تيك توك</p>
+                <p className="tag-heading">Tiktok { (flag!= true) &&<span> / تيك توك</span>}</p>
                 <p className="details">{tiktokLink}</p>
               </div>
             </div></a>}
             { (twitterLink != "") &&<a href={`${twitterLink}`} className="link"><div className="socials">
               <img src={threads} height={50} width={50}></img>
               <div>
-                <p className="tag-heading">Twitter / تويتر</p>
+                <p className="tag-heading">Twitter { (flag!= true) &&<span> / تويتر</span>}</p>
                 <p className="details">{twitterLink}</p>
               </div>
             </div></a>}
             { (facebookLink != "") &&<a href={`${facebookLink}`} className="link"><div className="socials">
               <img src={fb} height={50} width={50}></img>
               <div>
-                <p className="tag-heading">Facebook / فيسبوك</p>
+                <p className="tag-heading">Facebook { (flag!= true) &&<span> / فيسبوك</span>}</p>
                 <p className="details">{facebookLink}</p>
               </div>
             </div></a>}
             { (googleReviewLink != "") &&<a href={`${googleReviewLink}`} className="link"><div className="socials">
               <img src={greview} height={50} width={50}></img>
               <div>
-                <p className="tag-heading">Google Reviews / تقييمات جوجل
-                </p>
+                <p className="tag-heading">Google Reviews { (flag!= true) &&<span> / تقييمات جوجل</span>}</p>
                 <p className="details">{googleReviewLink}</p>
               </div>
             </div></a>}
@@ -354,28 +352,28 @@ const currentPageUrl = window.location.href;
             { (website != "") &&<a href={`${website}`} className="link"><div className="socials">
               <img src={websiteImg} height={50} width={50}></img>
               <div>
-                <p className="tag-heading">Website /رابط الموقع</p>
+                <p className="tag-heading">Website { (flag!= true) &&<span> / رابط الموقع</span>}</p>
                 <p className="details">{website}</p>
               </div>
             </div></a>}
             { (email != "") &&<a href={`mailto:${email}`} className="link"><div className="socials">
               <img src={emailImg} height={50} width={50}></img>
               <div>
-                <p className="tag-heading">Email /جي ميل</p>
+                <p className="tag-heading">Email { (flag!= true) &&<span> / جي ميل</span>}</p>
                 <p className="details">{email}</p>
               </div>
             </div></a>}
             { (youtubeShortsLink != "") &&<a href={`${youtubeShortsLink}`} className="link"><div className="socials">
               <img src={ytshorts} height={50} width={50}></img>
               <div >
-                <p className="tag-heading">YouTube Shorts / شورت يوتيوب</p>
+                <p className="tag-heading">YouTube Shorts { (flag!= true) &&<span> / شورت يوتيوب</span>}</p>
                 <p className="details">{youtubeShortsLink}</p>
               </div>
             </div></a>}
             { (googleMapLink != "") &&<a href={`${googleMapLink}`} className="link"><div className="socials">
               <img src={locations} height={50} width={50}></img>
               <div>
-                <p className="tag-heading">Location / خرائط جوجل</p>
+                <p className="tag-heading">Location { (flag!= true) &&<span> / خرائط جوجل</span>}</p>
                 <p className="details">{googleMapLink}</p>
               </div>
             </div></a>}
