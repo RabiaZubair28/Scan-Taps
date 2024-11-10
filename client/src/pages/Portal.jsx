@@ -163,7 +163,7 @@ var clientId = _id;
         setVisitCount(incrementResponse.data.count);
         // console.log(`Visit count for client ${clientId} incremented. New count:`, incrementResponse.data.count);
       } catch (error) {
-        console.error("Error fetching or incrementing visit count:", error);
+        // console.error("Error fetching or incrementing visit count:", error);
       }
     };
 
