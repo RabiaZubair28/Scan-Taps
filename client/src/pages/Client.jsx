@@ -148,25 +148,25 @@ flag;
   console.log(name)
 
 
-var [visitCount, setVisitCount] = useState(0);
-var clientId = _id; 
-console.log(_id)// Used it for a Client make it dynamic by fetching the current client id
+// var [visitCount, setVisitCount] = useState(0);
+// var clientId = _id; 
+// console.log(_id)// Used it for a Client make it dynamic by fetching the current client id
 
-  useEffect(() => {
-    const fetchAndIncrementVisitCount = async () => {
-      try {
-        console.log("Fetching visit count...");
-        const incrementResponse = await axios.post(`https://scantaps.onrender.com/api/visit/${clientId}`);
-        console.log("Current visit count fetched.");
-        setVisitCount(incrementResponse.data.count);
-        console.log(`Visit count for client ${clientId} incremented. New count:`, incrementResponse.data.count);
-      } catch (error) {
-        console.error("Error fetching or incrementing visit count:", error);
-      }
-    };
+//   useEffect(() => {
+//     const fetchAndIncrementVisitCount = async () => {
+//       try {
+//         console.log("Fetching visit count...");
+//         const incrementResponse = await axios.post(`https://scantaps.onrender.com/api/visit/${clientId}`);
+//         console.log("Current visit count fetched.");
+//         setVisitCount(incrementResponse.data.count);
+//         console.log(`Visit count for client ${clientId} incremented. New count:`, incrementResponse.data.count);
+//       } catch (error) {
+//         console.error("Error fetching or incrementing visit count:", error);
+//       }
+//     };
 
-    fetchAndIncrementVisitCount();
-  }, [clientId]);
+//     fetchAndIncrementVisitCount();
+//   }, [clientId]);
 
 
   const downloadContactCard = async () => {
