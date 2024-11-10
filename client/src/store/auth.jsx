@@ -4,7 +4,7 @@ export const AuthContext = createContext();
 
 // eslint-disable-next-line react/prop-types
 export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState("");
+
   const [details, setDetails] = useState("")
 
   const getDetails = async () => {
@@ -31,7 +31,7 @@ console.log(`services error: ${error}`)
   }, [])
 
   return (
-    <AuthContext.Provider value={{ user, details }}>
+    <AuthContext.Provider value={{ details }}>
       {children}
     </AuthContext.Provider>
   );
