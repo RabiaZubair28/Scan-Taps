@@ -290,7 +290,7 @@ const handleEditName = async (id) => {
       newName = name;
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       name: newName
     });
 
@@ -306,7 +306,7 @@ const handleAddName = async (id) => {
   var addName = document.getElementById('add-link').value;
   console.log(addName) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       name: addName
     });
 
@@ -321,7 +321,7 @@ const handleAddName = async (id) => {
 const handleDeleteName = async (id) => {
    // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       name: ""
     });
 
@@ -342,7 +342,7 @@ const handleEditRomanName = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       romanName: newNameRoman
     });
 
@@ -358,7 +358,7 @@ const handleAddRomanName = async (id) => {
   var addRomanName = document.getElementById('add-link').value;
   console.log(addRomanName) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       romanName: addRomanName
     });
 
@@ -373,7 +373,7 @@ const handleAddRomanName = async (id) => {
 const handleDeleteRomanName = async (id) => {
    // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       romanName: ""
     });
 
@@ -394,7 +394,7 @@ const handleEditClientName = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       clientName: newClientName 
     });
 
@@ -410,7 +410,7 @@ const handleAddClientName = async (id) => {
   var addClientName = document.getElementById('add-link').value;
   console.log(addClientName) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       clientName: addClientName
     });
 
@@ -425,7 +425,7 @@ const handleAddClientName = async (id) => {
 const handleDeleteClientName = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      clientName: ""
    });
 
@@ -446,7 +446,7 @@ const handleEditDesignation = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       designation: newDesignation 
     });
 
@@ -461,7 +461,7 @@ const handleEditDesignation = async (id) => {
 const handleDeleteDesignation = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      designation: ""
    });
 
@@ -482,7 +482,7 @@ const handleEditEmail = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       email: newEmail
     });
 
@@ -498,7 +498,7 @@ const handleAddEmail = async (id) => {
   var addEmail = document.getElementById('add-link').value;
   console.log(addEmail) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       email: addEmail
     });
 
@@ -513,7 +513,7 @@ const handleAddEmail = async (id) => {
 const handleDeleteEmail = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      email: ""
    });
 
@@ -534,7 +534,7 @@ const handleEditEmail02 = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       email: newEmail02
     });
 
@@ -549,7 +549,7 @@ const handleEditEmail02 = async (id) => {
 const handleDeleteEmail02 = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      email: ""
    });
 
@@ -570,7 +570,7 @@ const handleEditDescription = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       description:newDescription
     });
 
@@ -585,7 +585,7 @@ const handleEditDescription = async (id) => {
 const handleDeleteDescription = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      description: ""
    });
 
@@ -606,7 +606,7 @@ const handleEditPhone01 = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       phone01: newPhone01
     });
 
@@ -622,7 +622,7 @@ const handleAddPhone01 = async (id) => {
   var addPhone01= document.getElementById('add-link').value;
   console.log(addPhone01) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       phone01: addPhone01
     });
 
@@ -637,7 +637,7 @@ const handleAddPhone01 = async (id) => {
 const handleDeletePhone01 = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      phone01: ""
    });
 
@@ -658,7 +658,7 @@ const handleEditPhone02 = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       phone02: newPhone02
     });
 
@@ -674,7 +674,7 @@ const handleAddPhone02 = async (id) => {
   var addPhone02= document.getElementById('add-link').value;
   console.log(addPhone02) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       phone02: addPhone02
     });
 
@@ -689,7 +689,7 @@ const handleAddPhone02 = async (id) => {
 const handleDeletePhone02 = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      phone02: ""
    });
 
@@ -710,7 +710,7 @@ const handleEditGMap = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       googleMapLink: newGMap
     });
 
@@ -726,7 +726,7 @@ const handleAddGMap = async (id) => {
   var addGMap= document.getElementById('add-link').value;
   console.log(addGMap) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       googleMapLink: addGMap
     });
 
@@ -741,7 +741,7 @@ const handleAddGMap = async (id) => {
 const handleDeleteGMap = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      googleMapLink: ""
    });
 
@@ -762,7 +762,7 @@ const handleEditWhatsapp01 = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       whatsapp01: newWhatsapp01
     });
 
@@ -777,7 +777,7 @@ const handleEditWhatsapp01 = async (id) => {
 const handleDeleteWhatsapp01 = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      whatsapp01: ""
    });
 
@@ -798,7 +798,7 @@ const handleEditWhatsapp02 = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       whatsapp02: newWhatsapp02
     });
 
@@ -814,7 +814,7 @@ const handleAddWhatsapp02 = async (id) => {
   var addWhatsapp02= document.getElementById('add-link').value;
   console.log(addWhatsapp02) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       whatsapp02: addWhatsapp02
     });
 
@@ -829,7 +829,7 @@ const handleAddWhatsapp02 = async (id) => {
 const handleDeleteWhatsapp02 = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      whatsapp02: ""
    });
 
@@ -850,7 +850,7 @@ const handleEditInstagram = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       instagramLink: newInstagram
     });
 
@@ -866,7 +866,7 @@ const handleAddInstagram = async (id) => {
   var addInstagram= document.getElementById('add-link').value;
   console.log(addInstagram) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       instagramLink: addInstagram
     });
 
@@ -881,7 +881,7 @@ const handleAddInstagram = async (id) => {
 const handleDeleteInstagram = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      instagramLink: ""
    });
 
@@ -902,7 +902,7 @@ const handleEditSnapchat = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       snapchatLink: newSnapchat
     });
 
@@ -918,7 +918,7 @@ const handleAddSnapchat = async (id) => {
   var addSnapchat= document.getElementById('add-link').value;
   console.log(addSnapchat) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       snapchatLink: addSnapchat
     });
 
@@ -933,7 +933,7 @@ const handleAddSnapchat = async (id) => {
 const handleDeleteSnapchat = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      snapchatLink: ""
    });
 
@@ -954,7 +954,7 @@ const handleEditYoutube = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       youtubeLink: newYoutube
     });
 
@@ -970,7 +970,7 @@ const handleAddYoutube = async (id) => {
   var addYoutube= document.getElementById('add-link').value;
   console.log(addYoutube) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       youtubeLink: addYoutube
     });
 
@@ -985,7 +985,7 @@ const handleAddYoutube = async (id) => {
 const handleDeleteYoutube = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      youtubeLink: ""
    });
 
@@ -1006,7 +1006,7 @@ const handleEditYoutubeShorts = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       youtubeShortsLink: newYoutubeShorts
     });
 
@@ -1022,7 +1022,7 @@ const handleAddYoutubeShorts = async (id) => {
   var addYoutubeShorts= document.getElementById('add-link').value;
   console.log(addYoutubeShorts) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       youtubeShortsLink: addYoutubeShorts
     });
 
@@ -1037,7 +1037,7 @@ const handleAddYoutubeShorts = async (id) => {
 const handleDeleteYoutubeShorts = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      youtubeShortsLink: ""
    });
 
@@ -1058,7 +1058,7 @@ const handleEditTiktok = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       tiktokLink: newTiktok
     });
 
@@ -1074,7 +1074,7 @@ const handleAddTiktok = async (id) => {
   var addTiktok = document.getElementById('add-link').value;
   console.log(addTiktok) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       tiktokLink: addTiktok
     });
 
@@ -1089,7 +1089,7 @@ const handleAddTiktok = async (id) => {
 const handleDeleteTiktok = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      tiktokLink: ""
    });
 
@@ -1110,7 +1110,7 @@ const handleEditTwitter = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       twitterLink: newTwitter
     });
 
@@ -1126,7 +1126,7 @@ const handleAddTwitter = async (id) => {
   var addTwitter = document.getElementById('add-link').value;
   console.log(addTwitter) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       twitterLink: addTwitter
     });
 
@@ -1141,7 +1141,7 @@ const handleAddTwitter = async (id) => {
 const handleDeleteTwitter = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      twitterLink: ""
    });
 
@@ -1162,7 +1162,7 @@ const handleEditFacebook = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       facebookLink: newFacebook 
     });
 
@@ -1178,7 +1178,7 @@ const handleAddFacebook = async (id) => {
   var addFacebook = document.getElementById('add-link').value;
   console.log(addFacebook) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       facebookLink: addFacebook
     });
 
@@ -1193,7 +1193,7 @@ const handleAddFacebook = async (id) => {
 const handleDeleteFacebook = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      facebookLink: ""
    });
 
@@ -1214,7 +1214,7 @@ const handleEditGReview = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       googleReviewLink: newGReview 
     });
 
@@ -1230,7 +1230,7 @@ const handleAddGReview = async (id) => {
   var addGReview = document.getElementById('add-link').value;
   console.log(addGReview) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       googleReviewLink: addGReview
     });
 
@@ -1245,7 +1245,7 @@ const handleAddGReview = async (id) => {
 const handleDeleteGReview = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      googleReviewLink: ""
    });
 
@@ -1266,7 +1266,7 @@ const handleEditWebsite = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       website: newWebsite 
     });
 
@@ -1282,7 +1282,7 @@ const handleAddWebsite = async (id) => {
   var addWebsite = document.getElementById('add-link').value;
   console.log(addWebsite) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       website: addWebsite
     });
 
@@ -1297,7 +1297,7 @@ const handleAddWebsite = async (id) => {
 const handleDeleteWebsite = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      website: ""
    });
 
@@ -1318,7 +1318,7 @@ const handleEditAddress = async (id) => {
       console.log("here")
     } // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
       address: newAddress 
     });
 
@@ -1334,7 +1334,7 @@ const handleAddAddress = async (id) => {
   var addAddress = document.getElementById('add-link').value;
   console.log(addAddress) // Get the new name from the input
   try {
-    const response = await axios.put(`http://localhost:3500/api/data/add/${id}`, {
+    const response = await axios.put(`https://scantaps.onrender.com/api/data/add/${id}`, {
       address: addAddress
     });
 
@@ -1349,7 +1349,7 @@ const handleAddAddress = async (id) => {
 const handleDeleteAddress = async (id) => {
   // Get the new name from the input
  try {
-   const response = await axios.put(`http://localhost:3500/api/data/update/${id}`, {
+   const response = await axios.put(`https://scantaps.onrender.com/api/data/update/${id}`, {
      address: ""
    });
 
