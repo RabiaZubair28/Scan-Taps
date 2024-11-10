@@ -1712,12 +1712,12 @@ console.log(inputField)
 
               {editPhone01 && <div>
                 <p className="tag-heading">Phone { (flag!= true) &&<span> / الهاتف</span>}</p>
-                <div><input id="phone01" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"5px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <div><input id="phone01" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"15px", marginBlockStart:"5px"}} /> 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditPhone01(_id) 
                         setEditPhone01(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"5px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditPhone01(false)}}>&#x2716;</span>
               </div>
               </div>}
