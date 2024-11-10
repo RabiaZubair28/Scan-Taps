@@ -4,7 +4,6 @@ const app = express();
 const cors = require("cors");
 const Client = require("./models/client-model.js");
 const authRoute = require("./router/auth-router.js");
-const contactRoute = require("./router/contact-router.js");
 const detailRoute = require("./router/detail-router");
 const connectDb = require("./utils/db.js");
 const errorMiddleware = require("./middlewares/error-middleware.js");
