@@ -159,25 +159,25 @@ flag;
   // console.log(name)
 
 
-// var [visitCount, setVisitCount] = useState(0);
+var [visitCount, setVisitCount] = useState(0);
 var clientId = _id; 
-// console.log(_id)// Used it for a Client make it dynamic by fetching the current client id
+console.log(_id)// Used it for a Client make it dynamic by fetching the current client id
 
-  // useEffect(() => {
-  //   const fetchAndIncrementVisitCount = async () => {
-  //     try {
-  //       console.log("Fetching visit count...");
-  //       const incrementResponse = await axios.post(`https://scantaps.onrender.com/api/visit/${clientId}`);
-  //       console.log("Current visit count fetched.");
-  //       setVisitCount(incrementResponse.data.count);
-  //       console.log(`Visit count for client ${clientId} incremented. New count:`, incrementResponse.data.count);
-  //     } catch (error) {
-  //       console.error("Error fetching or incrementing visit count:", error);
-  //     }
-  //   };
+  useEffect(() => {
+    const fetchAndIncrementVisitCount = async () => {
+      try {
+        console.log("Fetching visit count...");
+        const incrementResponse = await axios.post(`https://scantaps.onrender.com/api/visit/${clientId}`);
+        console.log("Current visit count fetched.");
+        setVisitCount(incrementResponse.data.count);
+        console.log(`Visit count for client ${clientId} incremented. New count:`, incrementResponse.data.count);
+      } catch (error) {
+        console.error("Error fetching or incrementing visit count:", error);
+      }
+    };
 
-  //   fetchAndIncrementVisitCount();
-  // }, [clientId]);
+    fetchAndIncrementVisitCount();
+  }, [clientId]);
 
 
   const downloadContactCard = async () => {
@@ -1487,7 +1487,16 @@ console.log(inputField)
                       
                       </div>}
   
-         
+                      <div className="eye">
+                  <img src={eye} height={25}></img>
+                  <span style={{display:"flex",alignItems:"center",justifyContent:"center",
+                  }}>&nbsp;{visitCount} &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <div style={{backgroundColor:"rgb(22, 33, 92)", display:"flex",alignItems:"center",justifyContent:"center", border:"1px solid white", borderRadius:"5px", paddingBlock:"10px",paddingInline:"20px" }}>
+                  <FaDownload size={20} onClick={downloadContactCard} color="white" />
+                  <span style={{display:"flex",alignItems:"center",color:"white",justifyContent:"center"
+                  }} onClick={downloadContactCard} >&nbsp;&nbsp;Save Info</span>
+                </div>
+                </div>
 
         <div className="info">
           { (clientName!= "") && <div>{!editClientName && <div className="detail02">
