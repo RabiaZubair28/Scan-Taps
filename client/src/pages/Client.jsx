@@ -42,10 +42,10 @@ export const Client = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const params = useParams();
-  console.log(params)
+  // console.log(params)
 
   const { details } = useAuth();
-  console.log(details)
+  // console.log(details)
 
 
 const toDataURL = async (url) => {
@@ -144,13 +144,13 @@ flag;
     }
   }
 
-  console.log(companyName)
-  console.log(name)
+  // console.log(companyName)
+  // console.log(name)
 
 
 var [visitCount, setVisitCount] = useState(0);
 var clientId = _id; 
-console.log(_id)// Used it for a Client make it dynamic by fetching the current client id
+// Used it for a Client make it dynamic by fetching the current client id
 
   useEffect(() => {
     const fetchAndIncrementVisitCount = async () => {

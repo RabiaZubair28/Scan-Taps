@@ -161,7 +161,8 @@ flag;
 
 var [visitCount, setVisitCount] = useState(0);
 var clientId = _id; 
-console.log(_id)// Used it for a Client make it dynamic by fetching the current client id
+
+// Used it for a Client make it dynamic by fetching the current client id
 
   useEffect(() => {
     const fetchAndIncrementVisitCount = async () => {
