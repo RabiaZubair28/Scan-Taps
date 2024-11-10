@@ -1432,7 +1432,7 @@ console.log(inputField)
                       </div>} 
                       {
                         modal && <div className="">
-                           <div style={{textAlign:"center", fontSize:"20px"}}>Are your sure you want to delete?</div>
+                           <div style={{textAlign:"center", fontSize:"15px"}}>Are your sure you want to delete?</div>
                               <div style={{display:"flex", alignItems:"center", "justifyContent":"center"}}>
                                 <button style={{marginInline:"3px", marginBlock:"10px", backgroundColor:"rgb(22, 33, 92)", color:"white", paddingInline:"15px", paddingBlock:"8px", border:"1px solid white", borderRadius:"5px"}} onClick={()=>{
                                   setModal(false)
