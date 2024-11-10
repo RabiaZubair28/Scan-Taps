@@ -1395,7 +1395,7 @@ console.log(inputField)
    <div style={{display:"flex", alignItems:"center", justifyContent:"center", paddingBlock:"10px", gap:"10px"}}>
           <button style={{color:"white", fontSize:"17px", paddingBlock:"8px", paddingInline:"30px", backgroundColor:"rgb(22, 33, 92)", border:"1px solid white", borderRadius:"5px"}} onClick={
             ()=>{
-              navigate(`/`)
+              navigate(`/signin`)
             }
           }>Logout</button>
         </div>
