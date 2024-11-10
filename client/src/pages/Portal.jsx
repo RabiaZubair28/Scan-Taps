@@ -43,10 +43,10 @@ export const Portal = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const params = useParams();
-  console.log(params)
+  // console.log(params)
 
   const { details } = useAuth();
-  console.log(details)
+  // console.log(details)
 
 
 const toDataURL = async (url) => {
@@ -99,7 +99,7 @@ flag;
 
 for(let i=0; i < details.length; i++)
   {
-    console.log(details)
+    // console.log(details)
     if(details[i]._id == params.username && details[i].password == params.password)
       {
         companyName = details[i].companyName;
@@ -146,22 +146,22 @@ for(let i=0; i < details.length; i++)
     }
   }
 
-  console.log(companyName)
-  console.log(name)
+  // console.log(companyName)
+  // console.log(name)
 
 
 var [visitCount, setVisitCount] = useState(0);
 var clientId = _id; 
-console.log(_id)// Used it for a Client make it dynamic by fetching the current client id
+// console.log(_id)// Used it for a Client make it dynamic by fetching the current client id
 
   useEffect(() => {
     const fetchAndIncrementVisitCount = async () => {
       try {
-        console.log("Fetching visit count...");
+        // console.log("Fetching visit count...");
         const incrementResponse = await axios.post(`https://scantaps.onrender.com/api/visit/${clientId}`);
-        console.log("Current visit count fetched.");
+        // console.log("Current visit count fetched.");
         setVisitCount(incrementResponse.data.count);
-        console.log(`Visit count for client ${clientId} incremented. New count:`, incrementResponse.data.count);
+        // console.log(`Visit count for client ${clientId} incremented. New count:`, incrementResponse.data.count);
       } catch (error) {
         console.error("Error fetching or incrementing visit count:", error);
       }
