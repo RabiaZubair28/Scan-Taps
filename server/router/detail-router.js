@@ -1,8 +1,9 @@
 const express = require("express");
-const { details, updatedDetails } = require("../controllers/detail-controller");
+const { details } = require("../controllers/detail-controller");
 const Client = require("../models/client-model");
 const router = express.Router();
 
+console.log("Details controller:", details);
 router.route("/detail").get(details);
 // router.route("/update/:id").put(async (req, res) => {
 //   const { id } = req.params;

@@ -13,4 +13,4 @@ const details = async (req, res) => {
   }
 };
 
-module.exports = details;
+module.exports = { details };
