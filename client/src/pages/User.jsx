@@ -1422,12 +1422,12 @@ console.log(inputField)
                       {editName && <div className="eng-heading">
                       <input id="name"
                       placeholder="" style={{ paddingBlock:"8px"}} /> 
-                      <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditName(_id) 
                         window.location.reload()
-                        setEditName(false)}}>SUBMIT</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
-                        setEditName(false)}}>CANCEL</span>
+                        setEditName(false)}}>&#x2714;</span>
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                        setEditName(false)}}>&#x2714;</span>
                       
                       </div>} 
                       {
@@ -1756,11 +1756,11 @@ console.log(inputField)
               {editPhone02 && <div>
                 <p className="tag-heading">Phone { (flag!= true) &&<span> / الهاتف</span>}</p>
                 <div><input id="phone01" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditPhone02(_id) 
                         setEditPhone02(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditPhone02(false)}}>&#x2716;</span>
               </div>
               </div>}
@@ -1800,11 +1800,11 @@ console.log(inputField)
               {editAddress && <div>
                 <p className="tag-heading">Address { (flag!= true) &&<span>  / العنوان&nbsp; &nbsp;</span>}</p>
                 <div><input id="address" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditAddress(_id) 
                         setEditAddress(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditAddress(false)}}>&#x2716;</span>
               </div>
               </div>}
@@ -1844,11 +1844,11 @@ console.log(inputField)
               {editWhatsapp01 && <div>
                 <p className="tag-heading">Whatsapp { (flag!= true) &&<span>  / واتساب&nbsp; &nbsp;</span>}</p>
                 <div><input id="whatsapp01" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditWhatsapp01(_id) 
                         setEditWhatsapp01(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditWhatsapp01(false)}}>&#x2716;</span>
               </div>
               </div>}
@@ -1888,11 +1888,11 @@ console.log(inputField)
               {editWhatsapp02 && <div>
                 <p className="tag-heading">Whatsapp { (flag!= true) &&<span>  / واتساب&nbsp; &nbsp;</span>}</p>
                 <div><input id="whatsapp02" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditWhatsapp02(_id) 
                         setEditWhatsapp02(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditWhatsapp02(false)}}>&#x2716;</span>
               </div>
               </div>}
@@ -1932,11 +1932,11 @@ console.log(inputField)
               {editInstagram && <div>
                 <p className="tag-heading">Instagram { (flag!= true) &&<span>  / انستغرام&nbsp; &nbsp;</span>}</p>
                 <div><input id="instagram" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditInstagram(_id) 
                         setEditInstagram(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditInstagram(false)}}>&#x2716;</span>
               </div>
               </div>}
@@ -1975,11 +1975,11 @@ console.log(inputField)
               {editSnapchat && <div>
                 <p className="tag-heading">Snapchat { (flag!= true) &&<span>  / سناب شات&nbsp; &nbsp;</span>}</p>
                 <div><input id="snapchat" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditSnapchat(_id) 
                         setEditSnapchat(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditSnapchat(false)}}>&#x2716;</span>
               </div>
               </div>}
@@ -2018,11 +2018,11 @@ console.log(inputField)
               {editYoutube && <div>
                 <p className="tag-heading">Youtube { (flag!= true) &&<span> / موقع يوتيوب&nbsp; &nbsp;</span>}</p>
                 <div><input id="youtube" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditYoutube(_id) 
                         setEditYoutube(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditYoutube(false)}}>&#x2716;</span>
               </div>
               </div>}
@@ -2061,11 +2061,11 @@ console.log(inputField)
               {editTiktok && <div>
                 <p className="tag-heading">Tiktok { (flag!= true) &&<span> / تيك توك&nbsp; &nbsp;</span>}</p>
                 <div><input id="tiktok" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditTiktok(_id) 
                         setEditTiktok(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditTiktok(false)}}>&#x2716;</span>
               </div>
               </div>}
@@ -2104,11 +2104,11 @@ console.log(inputField)
               {editTiktok && <div>
                 <p className="tag-heading">Twitter { (flag!= true) &&<span> / تويتر&nbsp; &nbsp;</span>}</p>
                 <div><input id="twitter" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditTwitter(_id) 
                         setEditTwitter(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditTwitter(false)}}>&#x2716;</span>
               </div>
               </div>}
@@ -2147,11 +2147,11 @@ console.log(inputField)
               {editFacebook && <div>
                 <p className="tag-heading">Facebook { (flag!= true) &&<span> / فيسبوك&nbsp; &nbsp;</span>}</p>
                 <div><input id="facebook" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditFacebook(_id) 
                         setEditFacebook(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditFacebook(false)}}>&#x2716;</span>
               </div>
               </div>}
@@ -2190,11 +2190,11 @@ console.log(inputField)
               {editGReview && <div>
                 <p className="tag-heading">Google Review{ (flag!= true) &&<span> / تقييمات جوجل&nbsp; &nbsp;</span>}</p>
                 <div><input id="g-review" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditGReview(_id) 
                         setEditGReview(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditGReview(false)}}>&#x2716;</span>
               </div>
               </div>}
@@ -2233,11 +2233,11 @@ console.log(inputField)
               {editWebsite && <div>
                 <p className="tag-heading">Website{ (flag!= true) &&<span> / رابط الموقع&nbsp; &nbsp;</span>}</p>
                 <div><input id="website" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditWebsite(_id) 
                         setEditWebsite(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditWebsite(false)}}>&#x2716;</span>
               </div>
               </div>}
@@ -2276,11 +2276,11 @@ console.log(inputField)
               {editEmail02 && <div>
                 <p className="tag-heading">Email{ (flag!= true) &&<span> / جي ميل&nbsp; &nbsp;</span>}</p>
                 <div><input id="email02" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditEmail02(_id) 
                         setEditEmail02(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditEmail02(false)}}>&#x2716;</span>
               </div>
               </div>}
@@ -2319,11 +2319,11 @@ console.log(inputField)
               {editYoutubeShorts && <div>
                 <p className="tag-heading">Youtube Shorts{ (flag!= true) &&<span> / شورت يوتيوب&nbsp; &nbsp;</span>}</p>
                 <div><input id="youtube-shorts" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditYoutubeShorts(_id) 
                         setEditYoutubeShorts(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditYoutubeShorts(false)}}>&#x2716;</span>
               </div>
               </div>}
@@ -2362,11 +2362,11 @@ console.log(inputField)
               {editGMap && <div>
                 <p className="tag-heading">Location { (flag!= true) &&<span>   / خرائط جوجل&nbsp; &nbsp;</span>}</p>
                 <div><input id="g-map" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
-                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditGMap(_id) 
                         setEditGMap(false)
                         window.location.reload()}}>&#x2714;</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditGMap(false)}}>&#x2716;</span>
               </div>
               </div>}
