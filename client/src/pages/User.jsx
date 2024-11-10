@@ -1427,7 +1427,7 @@ console.log(inputField)
                         window.location.reload()
                         setEditName(false)}}>&#x2714;</span>
                       <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
-                        setEditName(false)}}>&#x2714;</span>
+                        setEditName(false)}}>&#x2716;</span>
                       
                       </div>} 
                       {
@@ -1462,12 +1462,12 @@ console.log(inputField)
                       {editRomanName && <div className="roman-heading">
                       <input id="roman-name"
                       placeholder="" style={{ paddingBlock:"8px"}} /> 
-                      <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditRomanName(_id) 
                         window.location.reload()
-                        setEditRomanName(false)}}>SUBMIT</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
-                        setEditRomanName(false)}}>CANCEL</span>
+                        setEditRomanName(false)}}>&#x2714;</span>
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                        setEditRomanName(false)}}>&#x2716;</span>
                       
                       </div>} 
                       {
@@ -1514,12 +1514,12 @@ console.log(inputField)
                       {editClientName && <div className="detail02">
                       <input id="client-name"
                       placeholder="" style={{ paddingBlock:"8px"}} /> 
-                      <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                       <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditClientName(_id) 
                         window.location.reload()
-                        setEditClientName(false)}}>SUBMIT</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
-                        setEditClientName(false)}}>CANCEL</span>
+                        setEditClientName(false)}}>&#x2714;</span>
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                        setEditClientName(false)}}>&#x2716;</span>
                       
                       </div>} 
                       {
@@ -1555,12 +1555,12 @@ console.log(inputField)
                       {editDesignation && <div className="detail">
                       <input id="designation"
                       placeholder="" style={{ paddingBlock:"8px"}} /> 
-                      <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditDesignation(_id) 
                         window.location.reload()
-                        setEditDesignation(false)}}>SUBMIT</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
-                        setEditDesignation(false)}}>CANCEL</span>
+                        setEditDesignation(false)}}>&#x2714;</span>
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                        setEditDesignation(false)}}>&#x2716;</span>
                       
                       </div>} 
                       {
@@ -1605,12 +1605,12 @@ console.log(inputField)
                       {editEmail && <div className="detail">
                       <input id="email"
                       placeholder="" style={{ paddingBlock:"8px"}} /> 
-                      <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                     <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditEmail(_id) 
                         window.location.reload()
-                        setEditEmail(false)}}>SUBMIT</span>
-                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
-                        setEditEmail(false)}}>CANCEL</span>
+                        setEditRomanName(false)}}>&#x2714;</span>
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                        setEditEmail(false)}}>&#x2716;</span>
                       
                       </div>} 
                       {
@@ -1647,11 +1647,11 @@ console.log(inputField)
                       {editDescription && <div className="detail">
                       <input id="description"
                       placeholder="" style={{ paddingBlock:"8px"}} /> 
-                      <span style={{fontSize:"20px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditDescription(_id) 
                         window.location.reload()
                         setEditDescription(false)}}>&#x2714;</span>
-                      <span style={{fontSize:"20px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"15px", paddingBlock:"8px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
+                      <span style={{fontSize:"12px", border:"1px solid white",backgroundColor:"red", borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"5px",color:"white"}} onClick={()=>{ 
                         setEditDescription(false)}}>&#x2716;</span>
                       
                       </div>} 
