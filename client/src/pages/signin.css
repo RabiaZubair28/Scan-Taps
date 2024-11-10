@@ -1,0 +1,219 @@
+.submit-btn{
+  width: 100%;
+  color: #1f2c73;
+  padding-inline: 20px;
+  padding-block: 15px;
+  border-radius: 10px;
+  border: 2px solid aliceblue;
+  background-color: #addcec;
+}
+.submit-btn:hover{
+  width: 100%;
+  color: aliceblue;
+  padding-inline: 20px;
+  padding-block: 15px;
+  border-radius: 10px;
+  border: 2px solid aliceblue;
+  background-color: #1f2c73;
+}
+.input-field{
+
+  padding-inline: 20px;
+  padding-block: 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 94%;
+}
+.lets-talk{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color:#1f2c73 ;
+  margin-bottom: 20px;
+  
+}
+.cross-btn{
+  position: absolute;
+  font-size: 20px;
+  color: #1f2c73;
+  /* absolute top-4 right-4 */
+}
+.modal-container{
+  background-color: aliceblue; 
+  padding-block: 30px ;
+  padding-inline: 25px;
+  position: relative;
+  width: 50%;
+  border-radius: 15px;
+  
+  /* shadow-lg fade-in */
+}
+.parent-modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  backdrop-filter: blur(8px);
+}
+@media screen and (max-width: 2500px) {
+  .input-field{
+
+    padding-inline: 20px;
+    padding-block: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 89%;
+  }
+  .modal-container{
+    background-color: aliceblue; 
+    padding-block: 30px ;
+    padding-inline: 25px;
+    position: relative;
+    width: 50%;
+    border-radius: 15px;
+    
+    /* shadow-lg fade-in */
+  }
+  .form-image{
+    width: 700px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .input-field{
+
+    padding-inline: 20px;
+    padding-block: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 89%;
+  }
+  .modal-container{
+    background-color: aliceblue; 
+    padding-block: 30px ;
+    padding-inline: 25px;
+    position: relative;
+    width: 50%;
+    border-radius: 15px;
+    
+    /* shadow-lg fade-in */
+  }
+  .form-image{
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .input-field{
+
+    padding-inline: 20px;
+    padding-block: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 89%;
+  }
+  .modal-container{
+    background-color: aliceblue; 
+    padding-block: 30px ;
+    padding-inline: 25px;
+    position: relative;
+    width: 50%;
+    border-radius: 15px;
+    
+    /* shadow-lg fade-in */
+  }
+  .form-image{
+    width: 600px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .input-field{
+
+    padding-inline: 20px;
+    padding-block: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 89%;
+  }
+  .modal-container{
+    background-color: aliceblue; 
+    padding-block: 30px ;
+    padding-inline: 25px;
+    position: relative;
+    width: 70%;
+    border-radius: 15px;
+    
+    /* shadow-lg fade-in */
+  }
+  .form-image{
+    width: 550px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .input-field{
+
+    padding-inline: 20px;
+    padding-block: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 89%;
+  }
+  .modal-container{
+    background-color: aliceblue; 
+    padding-block: 30px ;
+    padding-inline: 25px;
+    position: relative;
+    width: 80%;
+    border-radius: 15px;
+    
+    /* shadow-lg fade-in */
+  }
+  .form-image{
+    width: 500px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .input-field{
+
+    padding-inline: 20px;
+    padding-block: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 89%;
+  }
+  .modal-container{
+    background-color: aliceblue; 
+    padding-block: 30px ;
+    padding-inline: 25px;
+    position: relative;
+    width: 86%;
+    border-radius: 15px;
+    
+    /* shadow-lg fade-in */
+  }
+  .form-image{
+    width: 500px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .input-field{
+
+    padding-inline: 20px;
+    padding-block: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 80%;
+  }
+  .modal-container{
+    background-color: aliceblue; 
+    padding-block: 30px ;
+    padding-inline: 25px;
+    position: relative;
+    width: 85%;
+    border-radius: 15px;
+    
+    /* shadow-lg fade-in */
+  }
+  .form-image{
+    width: 300px;
+  }
+}
