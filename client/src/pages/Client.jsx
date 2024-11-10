@@ -260,7 +260,7 @@ const currentPageUrl = window.location.href;
               
                 { (romanName != "") && <div className="roman-heading">{romanName}</div>}
   
-                {/* <div className="eye">
+                <div className="eye">
                   <img src={eye} height={25}></img>
                   <span style={{display:"flex",alignItems:"center",justifyContent:"center",
                   }}>&nbsp;{visitCount} &nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -269,7 +269,7 @@ const currentPageUrl = window.location.href;
                   <span style={{display:"flex",alignItems:"center",color:"white",justifyContent:"center"
                   }} onClick={downloadContactCard} >&nbsp;&nbsp;Save Info</span>
                 </div>
-                </div> */}
+                </div>
                 <div className="info">
                 { (clientName!= "") &&<div className="detail02">{clientName}</div>}
                 { (designation!= "") &&<div className="detail">{designation}</div>}
