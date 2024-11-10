@@ -45,7 +45,7 @@ const navigate = useNavigate();
             // window.location.href(`/client/${details[i]._id}`)
             console.log(details[i]._id)
             console.log("login done")
-            navigate(`/portal/${details[i]._id}/${details[i].password}`)
+            // navigate(`/portal/${details[i]._id}/${details[i].password}`)
         }
       }
   };
