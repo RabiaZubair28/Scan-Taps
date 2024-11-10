@@ -20,13 +20,12 @@ export const App = () => {
         <Route path="/shop" element={<Shop />}></Route>
         <Route path="/contact" element={<ContactForm />}></Route>
         <Route path="/signin" element={<Signin />}></Route> */}
-        <Route path="/" element={<Signin />}></Route> 
+        <Route path="/signin" element={<Signin />}></Route> 
         <Route path="/:name" element={<Client />}></Route>
         <Route path="/client/:id" element={<User />}></Route>
         <Route path="/portal/:username/:password" element={<Portal />}></Route>
         <Route path="*" element={<Error />}></Route>
-  
-        <Route path="*" element={<Error />}></Route>
+
       </Routes>
     </BrowserRouter>
 
