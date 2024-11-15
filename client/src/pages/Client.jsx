@@ -438,12 +438,14 @@ const currentPageUrl = window.location.href;
           <hr />
           {/* <ShareSocial url="localhost.com" socialTypes={["facebook"]} /> */}
           <div className="social-section">
+
+
               <div className="social-btn" >
               <FacebookShareButton url={currentPageUrl} quote="please share this" hashtag={`Welcome to ${companyName}. Get to know us at ${currentPageUrl}`}>
               <TiSocialFacebook size={30} color="white" />
               </FacebookShareButton>
-              
               </div>
+
               <div className="social-btn" >
               <TwitterShareButton url={currentPageUrl} quote="please share this" hashtag={`Welcom to ${companyName}. Get to know us at ${currentPageUrl}`}>
               <TiSocialTwitter size={30} color="white" /></TwitterShareButton>
