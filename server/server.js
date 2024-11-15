@@ -10,7 +10,7 @@ const errorMiddleware = require("./middlewares/error-middleware.js");
 const path = require("path");
 
 const corsOptions = {
-  origin: "https://scantaps.onrender.com",
+  origin: "*",
   method: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 };
