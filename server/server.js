@@ -10,7 +10,7 @@ const errorMiddleware = require("./middlewares/error-middleware.js");
 const path = require("path");
 
 const corsOptions = {
-  origin: "https://scan-taps.com",
+  origin: "https://scantaps.onrender.com",
   method: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 };
