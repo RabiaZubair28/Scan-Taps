@@ -24,7 +24,7 @@ export const App = () => {
         <Route path="/:name" element={<Client />}></Route>
         <Route path="/client/:id" element={<User />}></Route>
         <Route path="/portal/:username/:password" element={<Portal />}></Route>
-        {/* <Route path="*" element={<Error />}></Route> */}
+        <Route path="*" element={<Error />}></Route>
 
       </Routes>
     </BrowserRouter>
