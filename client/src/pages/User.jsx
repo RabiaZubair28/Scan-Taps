@@ -1592,7 +1592,7 @@ console.log(inputField)
 
           { (email!= "") && <div>{!editEmail && <div className="detail">
                   <span>{email}</span> 
-                  <FaEdit style={{marginInlineStart:"15px",marginInlineEnd:"8px"}} size={20} color={"rgb(22,33,92)"} onClick={()=>{setEditEmail(true)}}/>
+                  {/* <FaEdit style={{marginInlineStart:"15px",marginInlineEnd:"8px"}} size={20} color={"rgb(22,33,92)"} onClick={()=>{setEditEmail(true)}}/> */}
                   <span>
                    {/* <MdDelete color={"rgb(22,33,92)"}
                     size={20} onClick={()=>{
@@ -1755,7 +1755,7 @@ console.log(inputField)
 
               {editPhone02 && <div>
                 <p className="tag-heading">Phone { (flag!= true) &&<span> / الهاتف</span>}</p>
-                <div><input id="phone01" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
+                <div><input id="phone02" placeholder="" style={{ paddingBlock:"8px", marginInlineStart:"20px", marginBlockStart:"5px"}} /> 
                 <span style={{fontSize:"12px", border:"1px solid white", backgroundColor:"green",borderRadius:"5px", paddingInline:"10px", paddingBlock:"5px", marginInlineStart:"8px", color:"white"}} onClick={()=>{ 
                         handleEditPhone02(_id) 
                         setEditPhone02(false)
