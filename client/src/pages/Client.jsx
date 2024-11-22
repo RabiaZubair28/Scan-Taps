@@ -94,7 +94,8 @@ img07,
 img08,
 img09,
 img10,
-flag;
+flag,
+linkedinLink;
 
 
   for(let i=0; i < details.length; i++)
@@ -141,11 +142,14 @@ flag;
         img09 = details[i].img09;
         img10 = details[i].img10;
         _id = details[i]._id;
+        linkedinLink = details[i].linkedinLink
+
     }
   }
 
   // console.log(companyName)
   // console.log(name)
+  console.log(linkedinLink)
 
 
 var [visitCount, setVisitCount] = useState(0);

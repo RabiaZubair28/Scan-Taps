@@ -27,6 +27,9 @@ const clientSchema = new mongoose.Schema({
   qr: {
     type: String,
   },
+  linkedinLink: {
+    type: String,
+  },
   address: {
     type: String,
   },

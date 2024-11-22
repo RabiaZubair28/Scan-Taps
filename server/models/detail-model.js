@@ -16,6 +16,9 @@ const detailSchema = new Schema({
   flag: {
     type: Boolean,
   },
+  linkedinLink: {
+    type: String,
+  },
   clientName: {
     type: String,
   },
