@@ -41,7 +41,7 @@ import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import linkedin from "../assets/linkedin.png"
 export const User = () => {
 
   const [show, setShow] = useState(false);
@@ -2286,10 +2286,10 @@ console.log(inputField)
               </div>}
             </div></a>}
           { (youtubeShortsLink != "") && <a className="link"><div className="socials">
-              <img src={ytshorts} height={50} width={50}></img>
+              <img src={linkedin} height={50} width={50}></img>
             {!modal20 && <div>
              {!editYoutubeShorts && <div >
-                <p className="tag-heading">Youtube Shorts { (flag!= true) &&<span> / شورت يوتيوب&nbsp; &nbsp;</span>}
+                <p className="tag-heading">Linkedin { (flag!= true) &&<span> / ينكدين &nbsp; &nbsp;</span>}
                 
                 <FaEdit style={{marginInlineStart:"0",marginInlineEnd:"5px"}} size={20} color={"rgb(22,33,92)"} onClick={()=>{setEditYoutubeShorts(true)}}/>
                 <MdDelete color={"rgb(22,33,92)"}

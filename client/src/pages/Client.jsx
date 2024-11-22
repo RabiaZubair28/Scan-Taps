@@ -18,6 +18,7 @@ import websiteImg from "../assets/web.png"
 import emailImg from "../assets/gmail.png"
 import ytshorts from "../assets/yt-shorts.png"
 import locations from "../assets/location.png"
+import linkedin from "../assets/linkedin.png"
 import eye from "../assets/eye.jpg"
 // import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
@@ -389,9 +390,9 @@ const currentPageUrl = window.location.href;
               </div>
             </div></a>}
             { (youtubeShortsLink != "") &&<a href={`${youtubeShortsLink}`} className="link"><div className="socials">
-              <img src={ytshorts} height={50} width={50}></img>
+              <img src={linkedin} height={50} width={50}></img>
               <div >
-                <p className="tag-heading">YouTube Shorts { (flag!= true) &&<span> / شورت يوتيوب</span>}</p>
+                <p className="tag-heading">Linkedin { (flag!= true) &&<span> / ينكدين </span>}</p>
                 <p className="details">{youtubeShortsLink}</p>
               </div>
             </div></a>}

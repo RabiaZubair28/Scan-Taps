@@ -35,6 +35,7 @@ import vCard from "vcards-js"
 import {FacebookShareButton, TelegramShareButton, TwitterShareButton, LinkedinShareButton, WhatsappShareButton} from 'react-share'
 import { ImCross } from "react-icons/im";
 import axios from "axios";
+import linkedin from "../assets/linkedin.png"
 import ScaleLoader from "react-spinners/ScaleLoader";
 export const Portal = () => {
 
@@ -399,9 +400,9 @@ const currentPageUrl = window.location.href;
               </div>
             </div></a>}
             { (youtubeShortsLink != "") &&<a href={`${youtubeShortsLink}`} className="link"><div className="socials">
-              <img src={ytshorts} height={50} width={50}></img>
+              <img src={linkedin} height={50} width={50}></img>
               <div >
-                <p className="tag-heading">YouTube Shorts { (flag!= true) &&<span> / شورت يوتيوب</span>}</p>
+                <p className="tag-heading">Linkedin { (flag!= true) &&<span> / ينكدين</span>}</p>
                 <p className="details">{youtubeShortsLink}</p>
               </div>
             </div></a>}
