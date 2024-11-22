@@ -404,9 +404,11 @@ const currentPageUrl = window.location.href;
               </div>
             </div></a>}
           </div>
+          { (img01 != "" || img02 != "" || img03 != "" || img04 != "" || img05 != "" || img06 != "" || img07 != "" || img08 != "" || img09 != "" || img10 != "" ) && <div>
           <hr />
           <p className="image-gallery-heading">Image Gallery</p>
           <hr />
+          </div>}
           <div className="image-gallery">
           { (img01 != "") && <a href={img01}><img src={img01} className="image"></img></a>}
           { (img02 != "") &&  <a href={img02}><img src={img02} className="image"></img></a>}
