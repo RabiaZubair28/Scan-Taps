@@ -276,7 +276,7 @@ const currentPageUrl = window.location.href;
                 </div>
                 </div>
                 <div className="info">
-                { (clientName!= "") &&<div className="detail02">{clientName}</div>}
+                { (clientName!= "") &&<div className="detail02" style={{fontSize:"30px"}}>{clientName}</div>}
                 { (designation!= "") &&<div className="detail">{designation}</div>}
                 <div className="detail">
                    <a href={`tel:${phone01}`} className="link">{phone01}</a> 
