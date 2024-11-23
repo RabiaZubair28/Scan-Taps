@@ -1251,12 +1251,12 @@
   }
   .detail {
     font-family: "Times New Roman", Times, serif;
-    font-size: 15px;
+    font-size: 12px;
     color: black;
     font-weight: 700;
     padding-top: 0.25rem;
     text-align: center;
-    padding-inline: 1.5rem;
+    padding-inline: 1rem;
   }
   .detail02 {
     font-family: "Times New Roman", Times, serif;
