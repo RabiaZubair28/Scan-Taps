@@ -51,10 +51,11 @@
   }
   .roman-heading {
     font-family: "Times New Roman", Times, serif;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
     padding-top: 1rem;
     padding-right: 2.5rem;
+    font-weight: 700;
   }
   .detail {
     font-family: "Times New Roman", Times, serif;
@@ -254,10 +255,11 @@
   }
   .roman-heading {
     font-family: "Times New Roman", Times, serif;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
     padding-top: 1rem;
     padding-right: 2.5rem;
+    font-weight: 700;
   }
   .detail {
     font-family: "Times New Roman", Times, serif;
@@ -454,10 +456,11 @@
   }
   .roman-heading {
     font-family: "Times New Roman", Times, serif;
-    font-size: 25px;
+    font-size: 23px;
     text-align: center;
     padding-top: 1rem;
     padding-inline: 2.5rem;
+    font-weight: 700;
   }
   .detail {
     font-family: "Times New Roman", Times, serif;
@@ -658,7 +661,7 @@
     padding-top: 1.25rem;
     text-align: center;
     padding-inline: 2.5rem;
-    font-weight: 900;
+    font-weight: 700;
   }
   .detail {
     font-family: "Times New Roman", Times, serif;
@@ -1049,8 +1052,8 @@
   }
   .roman-heading {
     font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 18px;
+    font-weight: 700;
     text-align: center;
     padding-top: 0.75rem;
     padding-inline: 2rem;
@@ -1240,8 +1243,8 @@
   }
   .roman-heading {
     font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 18px;
+    font-weight: 700;
     text-align: center;
     padding-top: 0.25rem;
     padding-inline: 1.5rem;
