@@ -256,9 +256,9 @@ const currentPageUrl = window.location.href;
         <Helmet>
         <title>{name}</title>
         </Helmet>
-          <img src={images} className="bg-img" alt=""></img>
+        <a href={images}><img src={images} className="bg-img" alt=""></img></a>
           <div className="logo-div">
-          <img src={logo} className="logo22" alt=""></img>
+          <a href={logo}><img src={logo} className="logo22" alt=""></img></a>
           </div>
           <div>
                 <div className="eng-heading">{name}</div>
