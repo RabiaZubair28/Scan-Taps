@@ -41,7 +41,7 @@
     padding-bottom: 1.5rem;
   }
   .eng-heading {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
@@ -245,7 +245,7 @@
     padding-bottom: 1rem;
   }
   .eng-heading {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 30px;
     font-weight: 700;
     padding-top: 1.75rem;
@@ -255,7 +255,7 @@
   }
   .roman-heading {
     font-family: "Times New Roman", Times, serif;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     padding-top: 1rem;
     padding-right: 2.5rem;
@@ -446,7 +446,7 @@
     padding-bottom: 1rem;
   }
   .eng-heading {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 30px;
     font-weight: 700;
     padding-top: 1.5rem;
@@ -456,7 +456,7 @@
   }
   .roman-heading {
     font-family: "Times New Roman", Times, serif;
-    font-size: 23px;
+    font-size: 20px;
     text-align: center;
     padding-top: 1rem;
     padding-inline: 2.5rem;
@@ -647,7 +647,7 @@
     margin-left: 15%;
   }
   .eng-heading {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
@@ -850,7 +850,7 @@
     margin-bottom: 0.5rem;
   }
   .eng-heading {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 27px;
     font-weight: 700;
     padding-top: 0;
@@ -1042,7 +1042,7 @@
     margin-bottom: 0.5rem;
   }
   .eng-heading {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 24px;
     font-weight: 700;
     padding-top: 1.25rem;
@@ -1232,7 +1232,7 @@
     margin-bottom: 0;
   }
   .eng-heading {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 24px;
     font-weight: 900;
     padding-top: 1rem;
