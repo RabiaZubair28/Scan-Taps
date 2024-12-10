@@ -19,6 +19,7 @@ import emailImg from "../assets/gmail.png"
 import ytshorts from "../assets/yt-shorts.png"
 import locations from "../assets/location.png"
 import linkedin from "../assets/linkedin.png"
+import product from "../assets/Product Catalogue.png"
 import eye from "../assets/eye.jpg"
 // import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
@@ -394,6 +395,13 @@ const currentPageUrl = window.location.href;
               <div >
                 <p className="tag-heading">Linkedin { (flag!= true) &&<span> / ينكدين </span>}</p>
                 <p className="details">{youtubeShortsLink}</p>
+              </div>
+            </div></a>}
+            { (menuLink != "") &&<a href={`${menuLink}`} className="link"><div className="socials">
+              <img src={product} height={50} width={50}></img>
+              <div >
+                <p className="tag-heading">Product Catalogue { (flag!= true) &&<span> / ينكدين </span>}</p>
+                <p className="details">{menuLink}</p>
               </div>
             </div></a>}
             { (googleMapLink != "") &&<a href={`${googleMapLink}`} className="link"><div className="socials">
