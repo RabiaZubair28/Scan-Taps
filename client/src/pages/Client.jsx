@@ -285,7 +285,7 @@ const currentPageUrl = window.location.href;
                    { (phone02!= "") && <a href={`tel:${phone02}`} className="link"> / {phone02}</a>}</div>
                 <a href={`mailto:${email}`} className="link"><div className="detail">{email}</div></a>
                 </div>
-                <div className="description">{description}</div>
+                <div className="description" style={{textWrap:"wrap"}}>{description}</div>
   
           </div>
           <hr />
