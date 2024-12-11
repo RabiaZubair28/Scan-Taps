@@ -285,7 +285,7 @@ const currentPageUrl = window.location.href;
                    { (phone02!= "") && <a href={`tel:${phone02}`} className="link"> / {phone02}</a>}</div>
                 <a href={`mailto:${email}`} className="link"><div className="detail">{email}</div></a>
                 </div>
-                <div className="description" style={{textWrap:"wrap",fontSize:"13px"}}>{description}</div>
+                <div className="description" style={{fontSize:"13px"}}>{description}</div>
   
           </div>
           <hr />
@@ -408,7 +408,7 @@ const currentPageUrl = window.location.href;
               <img src={locations} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Location { (flag!= true) &&<span> / خرائط جوجل</span>}</p>
-                <p className="details">{googleMapLink}</p>
+                <p className="details" style={{whiteSpace: "pre-wrap"}}>{googleMapLink}</p>
               </div>
             </div></a>}
           </div>
