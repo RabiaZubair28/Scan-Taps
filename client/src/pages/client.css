@@ -1393,6 +1393,7 @@
     padding-bottom: 1rem;
     padding-top: 0.75rem;
     text-align: center;
+    width: fit-content;
   }
   .eye {
     font-family: Arial, Helvetica, sans-serif;
