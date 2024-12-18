@@ -181,7 +181,7 @@ var clientId = _id;
     const vcard = `BEGIN:VCARD
 VERSION:3.0
 N:${name};;;;
-FN:${companyName}
+FN:${clientName," ", companyName}
 TEL;CELL:${phone01}
 TEL;CELL:${phone02}
 EMAIL;HOME:${email}
