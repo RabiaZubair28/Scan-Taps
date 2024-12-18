@@ -182,6 +182,7 @@ var clientId = _id;
 VERSION:3.0
 N:${name};;;;
 FN:${clientName}
+ORG:${companyName}
 TEL;CELL:${phone01}
 TEL;CELL:${phone02}
 EMAIL;HOME:${email}
