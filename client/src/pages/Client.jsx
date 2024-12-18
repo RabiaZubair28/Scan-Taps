@@ -180,9 +180,9 @@ var clientId = _id;
     // Create a vCard file
     const vcard = `BEGIN:VCARD
 VERSION:3.0
-N:${name};;;;
-FN:${clientName}
-ORG:${companyName}
+N:${clientName};;;;
+FN:${designation}
+ORG:${name}
 TEL;CELL:${phone01}
 TEL;CELL:${phone02}
 EMAIL;HOME:${email}
