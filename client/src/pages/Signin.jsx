@@ -58,16 +58,15 @@ const navigate = useNavigate();
     setTruePassword(isPasswordValid);
   
     // Show appropriate alert messages based on validation results
-    if (!isEmailValid && !isPasswordValid) {
-      alert("Invalid Email & Password!");
-    } else if (!isEmailValid) {
-      alert("Invalid Email!");
+    if (!isEmailValid) {
+      alert("Invalid Email!"); // Prioritize email validation
     } else if (!isPasswordValid) {
       alert("Wrong Password, Please try again!");
     } else {
-      console.log("login successful");
+      alert("Invalid Email & Password!"); // This case should not be reachable
     }
   };
+  
 
   return (
     <>
