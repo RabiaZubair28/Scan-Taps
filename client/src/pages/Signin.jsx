@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useEffect, useState} from "react";
 import { useNavigate} from "react-router-dom";
 import { useAuth } from "../store/auth";
 import React from 'react'
@@ -33,48 +33,40 @@ const navigate = useNavigate();
   // let handle the submit functionality
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log(user);
-
-    for(let i=0; i < details.length; i++)
-      {
-        if(details[i].email == user.email)
-        {
-          setTrueEmail(false)
-        }
-        if(details[i].password == user.password)
-          {
-            setTruePassword(false)
-          }
-      // const companyDescription = details[i].description;
-        if(details[i].email == user.email && details[i].password == user.password )
-        {
-            // console.log("ok")
-            // console.log(details[i]._id)
-            
-            // window.location.href(`/client/${details[i]._id}`)
-            // console.log(details[i]._id)
-            // console.log("login done")
-            navigate(`/portal/${details[i]._id}/${details[i].password}`)
+  
+    // Reset states to default at the beginning of validation
+    setTrueEmail(true);
+    setTruePassword(true);
+  
+    let isEmailValid = false;
+    let isPasswordValid = false;
+  
+    for (let i = 0; i < details.length; i++) {
+      if (details[i].email === user.email) {
+        isEmailValid = true;
+        if (details[i].password === user.password) {
+          isPasswordValid = true;
+          // Navigate to the user portal
+          navigate(`/portal/${details[i]._id}/${details[i].password}`);
+          return; // Exit function after successful login
         }
       }
-
-      if(trueEmail && truePassword)
-        {
-          alert("Invalid Email & Password!")
-        }
-      else if(trueEmail)
-      {
-        alert("Invalid Email!")
-      }
-      else if(truePassword)
-      {
-          
-        alert("Wrong Password, Please try again!")
-      }
-      else{
-        console.log("login successful")
-      }
-
+    }
+  
+    // Update state values based on validation
+    setTrueEmail(isEmailValid);
+    setTruePassword(isPasswordValid);
+  
+    // Show appropriate alert messages based on validation results
+    if (!isEmailValid && !isPasswordValid) {
+      alert("Invalid Email & Password!");
+    } else if (!isEmailValid) {
+      alert("Invalid Email!");
+    } else if (!isPasswordValid) {
+      alert("Wrong Password, Please try again!");
+    } else {
+      console.log("login successful");
+    }
   };
 
   return (
