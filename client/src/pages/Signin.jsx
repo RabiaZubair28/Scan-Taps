@@ -58,18 +58,21 @@ const navigate = useNavigate();
         }
       }
 
-      if(trueEmail)
+      if(trueEmail && truePassword)
+        {
+          alert("Invalid Email & Password!")
+        }
+      else if(trueEmail)
       {
         alert("Invalid Email!")
       }
-      if(truePassword)
-        {
-          console.log(truePassword)
-          alert("Wrong Password, Please try again!")
-        }
-      if(trueEmail && truePassword)
+      else if(truePassword)
       {
-        alert("Invalid Email & Password!")
+          
+        alert("Wrong Password, Please try again!")
+      }
+      else{
+        console.log("login successful")
       }
 
   };
