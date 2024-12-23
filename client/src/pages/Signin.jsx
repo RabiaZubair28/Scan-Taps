@@ -3,6 +3,7 @@ import { useNavigate} from "react-router-dom";
 import { useAuth } from "../store/auth";
 import React from 'react'
 import "./signin.css"
+import { toast } from "react-toastify";
 export const Signin = () => {
 
   const [user, setUser] = useState({
@@ -11,7 +12,8 @@ export const Signin = () => {
   });
 
 const [isOpen, setIsOpen] = React.useState(true);
- 
+const [trueEmail, setTrueEmail] = React.useState(true);
+const [truePassword, setTruePassword] = React.useState(true)
 const navigate = useNavigate();
   const { details } = useAuth();
   // console.log(details)
@@ -35,7 +37,14 @@ const navigate = useNavigate();
 
     for(let i=0; i < details.length; i++)
       {
-        
+        if(details[i].email == user.email)
+        {
+          setTrueEmail(false)
+        }
+        if(details[i].password == user.password)
+          {
+            setTruePassword(false)
+          }
       // const companyDescription = details[i].description;
         if(details[i].email == user.email && details[i].password == user.password )
         {
@@ -48,6 +57,21 @@ const navigate = useNavigate();
             navigate(`/portal/${details[i]._id}/${details[i].password}`)
         }
       }
+
+      if(trueEmail)
+      {
+        alert("Invalid Email!")
+      }
+      if(truePassword)
+        {
+          console.log(truePassword)
+          alert("Wrong Password, Please try again!")
+        }
+      if(trueEmail && truePassword)
+      {
+        alert("Invalid Email & Password!")
+      }
+
   };
 
   return (
