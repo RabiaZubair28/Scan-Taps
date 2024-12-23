@@ -63,7 +63,7 @@ const navigate = useNavigate();
     } else if (!isPasswordValid) {
       alert("Wrong Password, Please try again!");
     } else {
-      alert("Invalid Email & Password!"); // This case should not be reachable
+      alert("Invalid Email or Password!"); // This case should not be reachable
     }
   };
   
