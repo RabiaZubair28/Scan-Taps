@@ -59,10 +59,12 @@ const navigate = useNavigate();
   
     // Show appropriate alert messages based on validation results
     if (!isEmailValid) {
+      console.log(" i am here")
       alert("Invalid Email!"); // Prioritize email validation
     } else if (!isPasswordValid) {
       alert("Wrong Password, Please try again!");
     } else {
+      console.log("i am there")
       alert("Invalid Email or Password!"); // This case should not be reachable
     }
   };
