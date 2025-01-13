@@ -265,7 +265,7 @@ const currentPageUrl = window.location.href;
           <div>
                 <div className="eng-heading">{name}</div>
               
-                { (romanName != "") && <div className="roman-heading" style={{whiteSpace: "pre-wrap",fontSize:"16px"}}>{romanName}</div>}
+                { (romanName != "") && <div className="roman-heading" style={{whiteSpace: "pre-wrap",fontSize:"15px"}}>{romanName}</div>}
   
                 <div className="eye">
                   <img src={eye} height={25}></img>
