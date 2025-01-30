@@ -329,7 +329,7 @@ const currentPageUrl = window.location.href;
                 <p className="details">{whatsapp02}</p>
               </div>
             </div></a>}
-            { (instagramLink != "" || instagramLink02 != "" || instagramLink03 != "") &&<a href={`${instagramLink}`} className="link"><div className="socials">
+            { (instagramLink != "") &&<a href={`${instagramLink}`} className="link"><div className="socials">
               <img src={insta} height={50} width={50}></img>
               <div>
                 <p className="tag-heading">Instagram { (flag!= true) &&<span> / انستغرام</span>}</p>
